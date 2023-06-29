@@ -1,0 +1,617 @@
+[
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Does Cougar Promise cover books as well as room & board?",
+    "questions": [
+      "Can I rely on Cougar Promise to cover not just my room & board but also my books expenses?",
+      "Will Cougar Promise cover my books costs on top of my room & board expenses?",
+      "I wonder if Cougar Promise extends its coverage to include the cost of books in addition to room & board expenses."
+    ],
+    "answer": "Cougar Promise is a commitment to assist students in meeting the cost of tuition and mandatory fees. Students may be eligible to receive additional scholarships and financial aid that can cover books as well as room and board."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How will I be notified if I receive 'Cougar Promise'?",
+    "questions": [
+      "Will I receive any communication if I am awarded the 'Cougar Promise'?",
+      "How can I expect to be notified if I am eligible for the 'Cougar Promise'?",
+      "What is the process by which I'll be informed about receiving the 'Cougar Promise'?"
+    ],
+    "answer": "'Cougar Promise' is a commitment from the University of Houston to provide tuition coverage or support to qualifying Texas families, though it will not appear as an individual item on your financial aid offer. Eligible students will receive a separate communication providing the details of your assistance.\nPlease reach out to Scholarships & Financial Aid at sfa@central.uh.edu or call (713) 743-1010, option 5 for additional Cougar Promise questions."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Will all of my previous aid transfer to UH?",
+    "questions": [
+      "Will UH receive all the financial aid I received in the past?",
+      "Will my entire past financial aid be transferred to UH?"
+    ],
+    "answer": "Financial aid does not directly transfer between colleges. Instead, UH will recalculate your eligibility for the Federal Pell Grant Program and Federal Direct Loans based on the information on your FAFSA, your confirmed UH enrollment, and the previously disbursed amounts at your prior institution. If you are transferring for the spring semester, the amount of federal student aid for which you are eligible will be reduced by the amount of federal student aid you received and 'earned' at the previous institution. Certain types of Federal aid eligibilities, such as the Federal Pell Grants Program and Federal Direct Loans, are portable, while campus-based aid such as institutional grants and work-study are not. In addition, any money awarded by your prior institution from its own funds will not transfer."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Do I get additional financial aid for housing?",
+    "questions": [
+      "Is there any additional funding available for housing costs?",
+      "Can I receive further monetary aid for housing expenses?",
+      "Are there any supplementary funds for my accommodation needs?",
+      "Is there any extra financial support for my housing arrangements?"
+    ],
+    "answer": "There aren't additional sources of Financial Aid funding for students who select on-campus or off-campus housing. In order to defer housing fees using financial aid you must have enough accepted aid to cover all registration fees and tuition amounts, as well as the full amount of the housing charges."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "My awards are not enough to cover my fees and school supplies. How do I apply for additional funds?",
+    "questions": [
+      "The awards I received cannot fully cover my expenses for tuition and school materials. How can I obtain extra financial assistance?",
+      "I did receive awards but they do not cover all the costs for my school supplies and fees. Is there a way for me to get more funding?",
+      "Are there any options for me to access more financial aid?"
+    ],
+    "answer": "There are several ways to obtain additional funds for your education.\n'\tIf you are a dependent student, your parent may apply for a Federal Parent PLUS Loan to help with educational expenses. If they are denied, you can request an additional Federal Direct Unsubsidized Loan.\n'\tFor both dependent and independent students, you may also apply for alternative loans.\n'\tWhen requesting additional funds or applying for alternative loans, we can only approve an amount that will not exceed your cost of attendance (COA) for the University of Houston.\n'\tPlease note that during the start of the semester, the processing times for Federal PLUS Loans and alternative loans may take a few weeks. We advise students to select a deferment or payment plan if loan application is still in process."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What if I am not approved for a Federal Direct Parent PLUS Loan?",
+    "questions": [
+      "What happens in the scenario where I don't get approved for a Federal Direct Parent PLUS Loan?",
+      "Can you explain the steps I should take if my application for a Federal Direct Parent PLUS Loan is declined?"
+    ],
+    "answer": "If your parent applies for the Federal Direct Parent PLUS Loan and receives a denial letter, you will be offered additional Federal Direct Unsubsidized Loan funds based on your grade level eligibility."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What factors influence my ability to borrow and the amount I can borrow?",
+    "questions": [
+      "Which aspects determine my borrowing potential and the sum of money I am eligible to borrow?",
+      "What factors play a role in determining how much I can borrow and my ability to borrow?",
+      "The amount I can borrow and my eligibility to borrow are influenced by what factors?",
+      "How does my borrowing ability get affected and how much I can borrow can be influenced by which factors?"
+    ],
+    "answer": "'\tAll students are awarded on an assumed full-time enrollment status, your aid will be adjusted according to your actual enrollment after the official reporting day of the term and may affect the amount of your refund.\n'\tUndergraduate students must be enrolled in at least 6 hours to be eligible for loans.\n'\tWhen you transfer credits from one school to another, it is possible that not all of your credits will be accepted. This may affect your class level (sophomore or junior status), and you may only be able to borrow the lesser amount of the sophomore level.\n'\tIf your prior institution has not cancelled any active spring aid for you, you will not be eligible for awards at UH; any aid already awarded at UH will be cancelled."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How is my cost of attendance calculated?",
+    "questions": [
+      "What factors go into determining my cost of attendance?",
+      "Can you explain how my total expenses for attending are determined?",
+      "How do you calculate the overall cost of attending school?",
+      "What goes into the calculation of my attendance expenses?",
+      "Is there a formula used to determine my cost of attendance?"
+    ],
+    "answer": "To calculate your financial aid, the Office of Scholarships and Financial Aid will estimate what it will cost you to attend the University of Houston. Items included in the cost of attendance:\n'\tTuition and Fees ? The average cost of tuition and fees for a typical student is based on enrolling for 30 hours per year. The actual costs that a student incurs will vary depending on the student's degree of study.\n'\tRoom and Board ? A reasonable estimate of what it would cost to live in Houston while attending school. Actual costs may vary by individual choices related to location and circumstances.\n'\tBooks and Supplies ? The average cost of books and supplies for a typical student for an entire academic year.\n'\tTransportation ? Represents travel to and from your residence and transportation costs to and from class and work.\n'\tPersonal ? Personal items not included in room and board expenses."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "If I am only seeking a certificate, can I receive financial aid for that?",
+    "questions": [
+      "Is it possible to obtain financial assistance if I am solely interested in obtaining a certificate?",
+      "If I have no other objective than obtaining a certificate, will I still be eligible for financial aid?",
+      "Will I be able to apply for financial support if my sole aim is to obtain a certificate?",
+      "If my goal is strictly to obtain a certificate, am I still eligible for financial assistance?",
+      "Can I receive financial aid solely for the purpose of obtaining a certificate?"
+    ],
+    "answer": "No, all students must be enrolled in a degree-seeking program to qualify for federal and state financial aid."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "I've been selected for verification. What does this mean?",
+    "questions": [
+      "I have been picked for confirmation."
+    ],
+    "answer": "Verification is a random quality-control method used by the U.S. Department of Education to check the accuracy of information submitted on the FAFSA. All schools that disburse Federal Title IV Funds are required to participate in the verification process. The verification process is a manual review of your application and requires a minimum of 2 ? 3 weeks for processing (4 ? 6 weeks processing during July, August and September). For more information on the verification process, please contact your Financial Aid Advisor or the myUH Enrollment Services Call Center at 713-743-1010, option 5."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What information is subject to verification?",
+    "questions": [
+      "What elements call for verification",
+      "What particulars are open to verification?"
+    ],
+    "answer": "'\tHousehold size\n'\tNumber in college\n'\tReceipt of food stamp benefits\n'\tChild support paid\n'\tFor tax filers\n'\tAdjusted gross income (AGI)\n'\tIncome tax paid\n'\tUntaxed IRA distributions\n'\tUntaxed pensions\n'\tEducation credits\n'\tIRA deductions\n'\tTax-exempt interest\n'\tFor non-filers\n'\tIncome earned from work"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What additional application requirements might be requested if I am selected for verification?",
+    "questions": [
+      "Could you let me know what extra documents I need to provide if I am chosen for verification?",
+      "If I get selected for verification, what other application requirements will I have to fulfill?",
+      "In the event of my selection for verification, what other application demands might be required of me?",
+      "What further application mandates might I be expected to adhere to if I am picked for verification?",
+      "What other supporting documentation will I have to provide if I am chosen for verification?"
+    ],
+    "answer": "Once your FAFSA is submitted, your information will be verified by matching the information on your FAFSA with a series of federally mandated data (Social Security Number, date of birth, name, selective service status, citizenship status, and default status). You may also be selected for the verification process by the U.S. Department of Education, which is a random quality control method used to check the accuracy of information submitted on the FAFSA."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is the difference between a tax transcript and a tax return?",
+    "questions": [
+      "Can you explain the distinction between a tax transcript and a tax return?",
+      "I'm curious about the contrast between a tax transcript and a tax return.",
+      "How do you differentiate a tax transcript from a tax return?",
+      "Could you clarify the dissimilarity between a tax transcript and a tax return?",
+      "I'd like to know the disparity between a tax transcript and a tax return."
+    ],
+    "answer": "A tax return is the form that taxpayers file with the IRS when they pay taxes or request a refund. If you have a tax transcript initiated on your myUH To-Do list, you can provide a signed copy of the exact form you filed, which may be IRS Form 1040, 1040-A or 1040-EZ, depending on the tax year and your individual tax situation.\n\nIf you do not have access to your tax return documents for the indicated year you can request a tax return transcript from the IRS. A tax transcript is a summary of your tax return provided by the IRS. Please click here to request your tax return transcript.\n\nAs a reminder, you can submit you and/or your parent's tax return information via the FAFSA using the IRS Data Retrieval Tool. Because this method is electronic and instantaneous, it is preferred."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How can I request a tax transcript?",
+    "questions": [
+      "What is the process of obtaining a tax transcript?",
+      "Can you tell me how to request my tax transcript?"
+    ],
+    "answer": "You may contact the IRS using one of the below methods to request a tax transcript. Please allow 7-10 business days for delivery.\nOnline: https://www.irs.gov/individuals/get-transcript\nTelephone: (800) 908-9946\nIRS Form: 4506T-EZ (Short Form Request for Individual Tax Return Transcript)"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What does \"Disbursement\" mean?",
+    "questions": [
+      "Can you define the term \"Disbursement\" for me?",
+      "What exactly does \"Disbursement\" refer to?"
+    ],
+    "answer": "Financial aid disbursement is a process that takes place on or after the first class day of each term. Financial aid is defined as 'anticipated or pending aid' until it actually \"disburses\" into a student's account. When we \"disburse\" your financial aid, we credit your pending financial aid awards to your balance due."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "When will financial aid disburse to my student financial account?",
+    "questions": [
+      "When can I expect my student financial account to receive the disbursement of financial aid?",
+      "At what time will the disbursement of financial aid credit to my student financial account?",
+      "When is the expected date for the financial aid disbursement to be credited into my student financial account?",
+      "When will the financial aid disbursal reflect on my student financial account?",
+      "What is the expected timeline for the financial aid to disburse into my student financial account?"
+    ],
+    "answer": "Financial aid is awarded to students' accounts as pending/anticipated aid prior to the start of each term. All institutional scholarships and loans will begin disbursing the first week of classes (this can be delayed if you have session courses that start in months other than August and January). All Grants will disburse after the 12th class day of your latest enrolled session which is referred to as the \"official reporting date\" (ORD). This allows students to make changes to their enrollment status prior to the Official Reporting Day without adversely affecting their financial aid status. To view the specific disbursement dates for the semester, please visit out disbursement page. To view the start dates and Official Reporting dates of all sessions, please visit the Academic Calendar page."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Why aren't my estimated awards showing up as pending/anticipated financial aid?",
+    "questions": [
+      "I can't see my estimated awards listed under pending/anticipated financial aid.",
+      "The pending/anticipated financial aid section does not display my estimated awards.",
+      "My estimated awards seem to be missing from the list of pending/anticipated financial aid."
+    ],
+    "answer": "Estimated awards are not finalized, and it is likely we are still needing additional documentation from you to be able to finalize your awards. Please check your myUH self-service account To-Do List and submit any requested financial aid documents to our office.\n\nIf you have been awarded a TEXAS Grant estimate, you'll need to submit your final high school transcript to the Office of Admissions to be able to finalize your TEXAS Grant award."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How do I calculate how much I owe to secure my classes for each term based on my pending/anticipated Financial Aid?",
+    "questions": [
+      "Can you show me how to find out the amount of my tuition fees that needs to be covered by my expected Financial Aid?",
+      "What is the best way to determine the remaining cost of my tuition for each semester after considering my anticipated Financial Aid?",
+      "Could you guide me on how to calculate the balance payable for my classes based on my expected Financial Aid?",
+      "I need help figuring out the total tuition fees that I am obligated to pay considering my pending Financial Aid. Can you advise me on this matter?"
+    ],
+    "answer": "Once financial aid funds are posted to your myUH self-service account (and you have accepted the aid offer) as pending/anticipated aid, you can subtract the semester's aid amount from your semester's \"Charges Due.\" The calculated difference is either the amount you owe the University or the amount the University will refund to you. This difference is shown in your myUH self-service account under \"Account Summary.\" For example, let's say you have semester \"Charges Due\" due of $2,000, and your accepted pending/anticipated financial aid amount is $1,000. At that time, the amount you would need to pay in order to secure your classes would be $1,000; therefore, your \"Account Summary\" would show $1,000. Students are always advised to check their myUH financial accounts daily during the start of each term as balances and financial aid is subject to adjustment at any time."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What can I do if I do not have enough funds to cover my total term balance?",
+    "questions": [
+      "What options do I have if I lack the necessary funds to cover my term balance?",
+      "Is there any way to handle the term balance if I don't have enough funds?",
+      "In case I am short of funds to cover the entire term balance, what shall I do?",
+      "If I do not have sufficient funds, what are my choices for paying my total term balance?"
+    ],
+    "answer": "Prior to the University payment due date, students can select one of three payment plans offered by the University in order to secure enrollment: 90-Day Emergency Deferment Plan, Short-Term Tuition Deferment Plan (45 Day), or Installment Pay Plan. Deferment and Payment Plans are administered by UH's Student Business Services."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "After my University debts are paid, when will I receive any remaining financial aid funds?",
+    "questions": [
+      "When can I expect to receive the surplus financial aid money, once my University dues are cleared?",
+      "After clearing all my University dues, when will I get the leftover financial aid funds?",
+      "I wonder when I will receive the balance of financial aid funds, now that my University debts are paid off.",
+      "After I settle my outstanding University debts, when can I expect to obtain any surplus financial aid funds?"
+    ],
+    "answer": "Once financial aid funds are disbursed to a student's account and all University debts are paid, UH will release any remaining funds (refund) to BankMobile. All UH student refunds are then distributed by BankMobile. These funds will be sent to BankMobile within 24 hours of appearing on a student's account. Thereafter, refund processing times are determined by a student's refund preference in BankMobile. Visit https://www.refundselection.com/ to select your method of refund processing (direct deposit to your own bank account or deposit into a BankMobile Vibe Account)."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "I'm not eligible for a Federal Direct loan. What are my options?",
+    "questions": [
+      "What can I do if I don't qualify for a Federal Direct loan?",
+      "Are there any other loan options available to me since I am ineligible for a Federal Direct loan?",
+      "I am not able to obtain a Federal Direct loan, are there any other alternatives I can consider?",
+      "Since I am ineligible for a Federal Direct loan, what other types of loans can I look into?",
+      "What are my choices if a Federal Direct loan is not an option for me?"
+    ],
+    "answer": "Many banks and other private lenders offer educational loans to help you pay for your education. Interest rates may not be as low as the federal programs can offer, but some lenders are able to offer attractive loan options. If you are a Texas resident, you may also want to look into the College Access Loan Program (CAL). For additional loan options, visit our Loans page."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is the difference between subsidized and unsubsidized Federal Direct Loans?",
+    "questions": [
+      "Can you explain the contrast between subsidized and unsubsidized Federal Direct Loans?",
+      "What distinguishes subsidized and unsubsidized Federal Direct Loans from one another?",
+      "Could you tell me the dissimilarity between subsidized and unsubsidized Federal Direct Loans?"
+    ],
+    "answer": "Federal Direct Subsidized Federal Loans are offered to undergraduate students based on financial need, and the government pays the interest to the lender while you are in school at least half-time, as well as during any deferment periods. Federal Unsubsidized Loans, on the other hand, are not based on need, and borrowers are responsible for all interest accrued on the loan. Interest payments can be deferred until graduation and then will be capitalized and added to the principal of the loan. You also can make payments on the interest while in school by contacting your loan servicer. Federal Direct Unsubsidized Loans are offered to graduate, professional and undergraduate students."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How will I receive my loan?",
+    "questions": [
+      "What is the process for receiving my loan?",
+      "How will I be able to access my loan funds?",
+      "Can you clarify how I will get my loan?",
+      "What steps do I need to take to obtain my loan?"
+    ],
+    "answer": "Your funds will be received electronically and will be applied to your myUH student account balance. Any remaining funds will be credited and distributed to you by BankMobile. Visit https://www.refundselection.com/ to select your method of refund processing (direct deposit to your own bank account or deposit into a BankMobile Vibe Account)."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "I have accepted my Federal Direct Loan. Why has it not disbursed?",
+    "questions": [
+      "My Federal Direct Loan has been accepted, but why hasn't it been disbursed yet?",
+      "Even though I have accepted the Federal Direct Loan, why hasn't it been disbursed so far?",
+      "I have acknowledged my Federal Direct Loan, but why hasn't it been disbursed yet?"
+    ],
+    "answer": "Please make sure you have completed your Master Promissory Note and Entrance Counseling at StudentAid.gov. Everyone receiving a Federal Direct Loan must complete a MPN and Entrance Counseling for their funds to disburse."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What are the consequences of default?",
+    "questions": [
+      "What are the outcomes of failing to meet my financial commitments?",
+      "What are the aftermaths of defaulting on my payments"
+    ],
+    "answer": "'\tYou may be subject to court action requiring total repayment of your loan.\n'\tYour credit rating can be severely damaged, making it difficult to borrow money for a car or home, or to receive credit cards.\n'\tThe default status can remain on your credit report for several years after you pay the loan in full.\n'\tYour federal Treasury payments (including federal tax refunds) and state income tax refunds may be withheld.\n'\tUp to 15 percent of your disposable income can be garnished (administrative wage garnishment) without a court order.\n'\tYou won't be eligible to receive any more federal financial aid (and possibly state aid) unless you make acceptable arrangements to repay what you already owe.\n'\tYou may be ineligible for assistance under most federal benefit programs.\n'\tYou'll be ineligible for deferments or forbearance.\n'\tYou'll be liable for the costs associated with collecting your loan up to 24 percent of your principal and interest balance, plus court costs and attorney fees.\n'\tYou may not be able to renew a professional license you hold or may jeopardize your chances for certain types of employment.\n'\tYour loan may be assigned to a professional collection agency."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is an incentive repayment plan?",
+    "questions": [
+      "Can you explain to me the concept of an incentive repayment plan?",
+      "Could you give me a brief overview of what an incentive repayment plan entails?"
+    ],
+    "answer": "Certain loan servicers may offer an incentive plan for borrowers who make timely payments (i.e., interest rate and/or fee reductions for borrowers who make 48 consecutive on-time payments). Check with your loan servicer for available options."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How do I apply for a scholarship at the University of Houston?",
+    "questions": [
+      "What is the process to submit a scholarship application for the University of Houston?",
+      "Can you guide me on how to seek a scholarship at the University of Houston?",
+      "I would like to know the procedure for applying for a scholarship at the University of Houston."
+    ],
+    "answer": "For most UH-funded scholarships, your application for admission serves as your scholarship application as well. Others require that you submit the FAFSA and provide additional documentation. Additional outside scholarships for admitted UH students maybe found via Scholarship Universe, an application located within your accessUH login. Look for the green icon! "
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How do I send a private/outside scholarship to the Financial Aid Department?",
+    "questions": [
+      "What is the procedure for submitting a private/external scholarship to the Financial Aid Department?",
+      "Could you guide me on how to send a private/external scholarship to the Financial Aid Department?",
+      "Can you provide me with instructions on how to forward a private/external scholarship to the Financial Aid Department?"
+    ],
+    "answer": "Full detailed instructions can be found on the Private Scholarship Processing Guide."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What are my student rights and responsibilities?",
+    "questions": [
+      "What are my obligations and entitlements as a student?",
+      "What are my duties and privileges as a student representative?",
+      "What are the regulations and benefits that pertain to me as a student?",
+      "What are the requirements and allowances that apply to me as a student?"
+    ],
+    "answer": "As a student consumer you have the right to:\n'\tknow what financial assistance is available, including information on all federal, state, and institutional financial assistance programs;\n'\tknow the deadlines for submitting applications for financial aid;\n'\tknow how your financial need is determined. This process includes how costs for tuition and fees, room and board, travel, books and supplies, and personal expenses are decided in developing cost of attendance budgets;\n'\tknow what resources (such as parental contribution, other financial assistance, student assets, etc.) are considered in the calculation of your financial need;\n'\tknow how your financial need, as determined by the University, has been met, and how and when financial aid funds are disbursed;\n'\trequest from the Office of Scholarships and Financial Aid (OSFA), an explanation of the various programs in your student aid package. If you believe you have not received the financial assistance for which you are eligible, you may request in writing a review of your aid application;\n'\tknow what portion of the financial assistance received must be repaid, and what portion is scholarship/grant aid. If the aid is a loan, you have the right to know what the interest rate is, the total amount that must be repaid, the payback procedures, the length of time you have to repay the loan, and when repayment is to begin;\n'\tknow how the OSFA determines whether you are making satisfactory academic progress, and what happens if you are not; and\n'\tyou have a right to privacy.  All records submitted with your application for financial aid are confidential, and subject to legal requirements concerning disclosure of such information. For more information, please see the University's explanation regarding The Family Educational Rights and Privacy Act (FERPA).\nIt is your responsibility to:\n'\treview and consider all information about the financial aid programs at the University prior to enrolling;\n'\tcomplete all financial assistance applications and forms accurately, and submit them to the OSFA by the appropriate deadlines;\n'\tcomplete the Free Application for Federal Student Aid (FAFSA) or Renewal FAFSA (undergraduates) in full. You may experience delays in receiving a decision about financial aid if forms are submitted after the priority filing deadlines or are filled out incompletely or incorrectly. Falsification of information on application forms for federal financial assistance is considered a criminal offense, and you may be subject to penalties under the U.S. Criminal Code;\n'\trespond quickly to all requests for additional documentation related to verification or corrections;\n'\tnotify the OSFA if there is a change in any of the information reported on the FAFSA;\n'\tread and understand all forms, both paper and electronic, that you are asked to submit or sign, and keep copies of these forms. You are legally responsible for all agreements which you sign;\n'\tif awarded a loan, participate in any required entrance/exit counseling;\n'\tnotify your lender of any changes in your name, address, or school status if a loan is part of your financial aid;\n'\tif employed through the Federal Work Study Program, report to your job according to the schedule you arranged with your supervisor, complete all work to the best of your ability, and notify your supervisor in advance if you are unable to report to work for any reason;\n'\tmaintain Satisfactory Academic Progress (SAP) for financial aid eligibility;\n'\tknow and comply with the University's refund and Return of Title IV fund policies"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is an unofficial withdrawal?",
+    "questions": [
+      "Can you explain the meaning of an unofficial withdrawal?"
+    ],
+    "answer": "If a student who begins attendance fails to earn a passing grade in at least one course during the semester, the institution must assume that the student has unofficially withdrawn, unless the institution can document that the student completed the period. In the absence of evidence of a last day of attendance at an academically related activity, the school must consider a student who failed to earn a passing grade to be an unofficial withdrawal and subject to returning 100 percent of financial aid received for the semester."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How will Financial Aid obtain the information to complete an unofficial withdrawal for me?",
+    "questions": [
+      "What steps will Financial Aid take to gather the necessary data for processing an unofficial withdrawal on my behalf?",
+      "How does Financial Aid plan to obtain the information needed to carry out an unofficial withdrawal process on my name?"
+    ],
+    "answer": "The Office Scholarships and Financial Aid will email your professors a proof of course completion request on the business day following the grade deadline for the term. They will be asked to provide the last date of attendance via an email reply. All emailed responses from professors must be received within 10 days of email receipt."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How much will be returned to the Department of Education?",
+    "questions": [
+      "What will be the amount returned to the Department of Education?",
+      "How much money is going to be given back to the Department of Education?",
+      "What is the sum that will be refunded to the Department of Education?",
+      "What is the quantity that is being returned to the Department of Education?",
+      "How much will go back to the Department of Education?"
+    ],
+    "answer": "A date of withdrawal will be determined according to the last date of attendance the professor has provided. That date will be used to calculate the Return of Title IV (R2T4) and federal funds to return. If the professor indicates that the student stopped attending but we cannot provide a specific date, then we will use the midpoint of the semester and calculate the R2T4 based on 50 percent. Students who withdraw (officially or unofficially) after completing 60 percent of the semester earn 100 percent of their financial aid for the semester and no Title IV funds are returned. If a last date of attendance is not provided by the deadline, 100 percent of federal aid received for the semester will be returned."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How am I notified if I owe a balance due to withdrawal?",
+    "questions": [
+      "If I have an outstanding balance because of a withdrawal, how will I be notified?",
+      "How will I know if a balance is due as a result of a withdrawal?",
+      "Is there a way I can be notified of any balance owed due to a withdrawal?"
+    ],
+    "answer": "Once the unearned aid is established, the Office of Scholarships and Financial Aid will reduce the award and a send a letter of notification to the student. Official correspondence from the University is sent to the email address provided by the student. If the student has failed to correct his or her contact information, they will not be relieved of the responsibility on the grounds that the correspondence was not received. The unearned aid is removed from the student's account by Scholarships and Financial Aid and returned to the Department of Education through the Common Origination and Disbursement (COD) system. Any unearned Title IV financial aid is returned by University of Houston in the following order: Federal Direct Unsubsidized Loans, Federal Direct Subsidized Loans, Federal PLUS Loans, Federal Pell Grant Program funds, Federal Supplemental Educational Opportunity Grant Program (SEOG) funds, other Title IV assistance."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "If aid is returned, will I owe the University?",
+    "questions": [
+      "Will I be required to repay the University if I return the aid?",
+      "Returning the aid, would I still be indebted to the University?",
+      "If I give back the aid, will I still have financial obligations to the University?"
+    ],
+    "answer": "If the Return of Title IV (R2T4) calculation causes a balance on the account, it is the student's responsibility to pay the balance to the University of Houston. Students are required to repay any balance owed to the University of Houston before transcripts or diplomas will be released or before students can register for an upcoming semester. Any federal loan amount owed by the student is to be repaid under the terms of their promissory note; in addition, students may be responsible for possible repayment of grant funds to the Department of Education"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Does withdrawing affect Satisfactory Academic Progress?",
+    "questions": [
+      "Is Satisfactory Academic Progress impacted by withdrawing?",
+      "Will withdrawing impact my Satisfactory Academic Progress?",
+      "Does withdrawal adversely affect my Satisfactory Academic Progress?",
+      "Can withdrawing have an impact on achieving Satisfactory Academic Progress?"
+    ],
+    "answer": "Yes, withdrawing from one or all classes may impact your Satisfactory Academic Progress (SAP). Please view our requirements for maintaining Satisfactory Academic Progress (SAP) to remain eligible for subsequent semesters of financial aid."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What type of payments does UH accept?",
+    "questions": [
+      "What are the payment methods that UH is willing to accept?",
+      "Which modes of payment does UH recognize?",
+      "What are the accepted payment modes at UH?",
+      "Which payment types does UH allow?",
+      "What are the payment options available at UH?"
+    ],
+    "answer": "Cash, money order, cashier check, business check, and personal check (with account holder's date of birth and id number included). We accept all credit and debit cards: (Mastercard, Visa, Discover, and American Express). The University does not accept checks issued through credit card accounts. Temporary cards or gift cards are also not accepted.\nPayments can be made at the Cashier's Office in the Welcome Center Monday-Thursday, 8:00AM-5:00PM and Friday, 9:00AM-5:00PM. Check and credit card payments can be made online at myUH (MasterCard, Visa, Discover and American Express only)."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How do I apply for a 90-Day Emergency Deferment Plan, Short Term Tuition Deferment Plan, or Installment Plan?",
+    "questions": [
+      "What are the steps to apply for a 90-Day Emergency Deferment Plan, Short Term Tuition Deferment Plan, or Installment Plan?",
+      "Can you guide me on how to go about applying for a 90-Day Emergency Deferment Plan, Short Term Tuition Deferment Plan, or Installment Plan",
+      "Could you please provide me with information on how to apply for a 90-Day Emergency Deferment Plan, Short Term Tuition Deferment Plan, or Installment Plan?"
+    ],
+    "answer": "1.\tLog on to myUH.\n2.\tClick UH Self-Service.\n3.\tUnder myUH Self-Service, click on Student Financials.\n4.\tClick on Payment Plans. NOTE: A \"paid\" status must be accomplished to be eligible for a UH Book Loan."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What are the qualifications for an Emergency/Short Term Tuition Deferment Plans?",
+    "questions": [
+      "What are the requirements for an Emergency/Short Term Tuition Deferment Plans?",
+      "What criteria must one meet to be eligible for an Emergency/Short Term Tuition Deferment Plans?",
+      "What are the prerequisites for an Emergency/Short Term Tuition Deferment Plans?",
+      "What are the necessary qualifications to apply for an Emergency/Short Term Tuition Deferment Plans?",
+      "What conditions must be fulfilled to enroll in an Emergency/Short Term Tuition Deferment Plans?"
+    ],
+    "answer": "You can't have any prior balances or stops on your student account and you must be enrolled in courses."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is not covered under mandatory fees when applying for an Emergency/Short Term Tuition Deferment Plans?",
+    "questions": [
+      "Which expenses are not included in the mandatory fees while applying for an Emergency/Short Term Tuition Deferment Plans?",
+      "What costs are excluded from the mandatory fees of Emergency/Short Term Tuition Deferment Plans application?",
+      "Which charges are not a part of the mandatory fees for Emergency/Short Term Tuition Deferment Plans?",
+      "What are the expenses that are not covered in the mandatory fees while applying for Emergency/Short Term Tuition Deferment Plans?",
+      "What costs are left out from the mandatory fees when filing for Emergency/Short Term Tuition Deferment Plans?"
+    ],
+    "answer": "Fees that are not covered by the 90-Day Emergency Deferment and Short Term Tuition Deferment Plans are optional fees such as health insurance, yearbook and parking citations and decals. Students must pay these fees out of pocket when applying for either of these loans."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What happens if I do not submit my payment by the deadline?",
+    "questions": [
+      "What will be the outcome if I fail to make my payment before the deadline?",
+      "If I miss the deadline, what repercussions can I anticipate?",
+      "What are the results of not meeting the payment deadline?"
+    ],
+    "answer": "If payment is not received in our office or posted online by close of business on the published due date, students will risk having their classes canceled."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How often should I check my student financial account in my UH?",
+    "questions": [
+      "What is the frequency of checking my student financial account in my UH?",
+      "How frequently should I monitor my student financial account in my UH?",
+      "How often is it suggested to check my student financial account in my UH?"
+    ],
+    "answer": "Students are advised to check their myUH accounts daily and make immediate payment arrangements for any charges due.  Student financial accounts are dynamic and subject to change due to adding of classes, adjustments in financial aid, parking registration, housing, meal plans, etc."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How do I receive a refund of unused monies associated with tuition, fees, and/or financial aid from the University of Houston?",
+    "questions": [
+      "Can you tell me the procedure to obtain a refund of unutilized funds from the University of Houston for tuition, fees, and financial aid?",
+      "I would like to know how to claim a refund for any residual funds pertaining to my tuition, fees, or financial aid from the University of Houston.",
+      "I need information about the process of receiving a refund for any extra money linked to my tuition fee and financial aid from the University of Houston.",
+      "How can I get back any unused funds related to tuition, fees, and financial aid that I paid to the University of Houston through a refund?"
+    ],
+    "answer": "If you have a credit balance on your account as a result of financial aid 'feeding' to your account; then that money will automatically generate a refund to you without any action on your part. If the credit balance on your account is created for another reason then you will need to sign in to your myUH self-service account and request the refund. For students who pay with credit card, their credit refund will apply back to the original card."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is the refund policy regarding adding/dropping classes?",
+    "questions": [
+      "Can you explain the policy for refunds on adding or dropping classes?",
+      "I'm not clear on the refund policy for adding or dropping classes. Could you explain it?",
+      "Could you inform me of the refund policy for adding or dropping courses?",
+      "What is the policy for refunds when it comes to adding/dropping classes?"
+    ],
+    "answer": "It is recommended that you go to the following website and study the explanation for refunds/credits for an explanation of how they are applied. www.uh.edu/financial/payment/refunds"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What are my refund options?",
+    "questions": [
+      "Can you please inform me about the available refund choices?",
+      "I'd like to know which options are there for my refund.",
+      "Could you explain the refund options that I have?"
+    ],
+    "answer": "You have two options:\na.\tYou can elect to have your refund deposited to the bank account of your choice;\nb.\tYou can have your refund deposited to a BankMobile Vibe account"
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Can I have my refund directly deposited/transferred to my personal bank account?",
+    "questions": [
+      "Is it possible for me to receive my refund via direct deposit into my personal bank account?",
+      "Would I be able to get my refund transferred electronically to my personal account?",
+      "Can I instruct the refund to be sent directly to my individual bank account?",
+      "Is there an option to receive my refund via direct transfer to my personal bank account?"
+    ],
+    "answer": "Yes, you can have the refund sent to your bank account at the bank of your choice (U.S. Bank). You may do this by entering your banking information, as located on the bottom of your check, at the following website: refundselection.com."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "How long does it take to have my refund deposited/transferred into my personal bank account?",
+    "questions": [
+      "Is there a specific timeframe for my refund to be credited into my personal bank account?",
+      "When can I expect my refund to be transferred to my personal bank account?",
+      "Can you tell me when my refund will be credited into my personal bank account?"
+    ],
+    "answer": "If you select this method of refund, money is transferred to an existing account the same business day BankMobile receives funds from UH. Typically, it takes 1 ' 2 business days for the receiving bank to credit the money to your account."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is the BankMobile Vibe Account?",
+    "questions": [
+      "Could you tell me what the BankMobile Vibe Account is?",
+      "What exactly does the BankMobile Vibe Account entail",
+      "Can you provide me with some information on the BankMobile Vibe Account?"
+    ],
+    "answer": "Generally speaking, the BankMobile Vibe is an optional account through BankMobile where students may elect to receive refunds from the University. Again this is optional; the University recommends that you set up direct deposit. For more information regarding the BankMobile Vibe account, please visit http://bankmobile.com."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is BankMobile Vibe?",
+    "questions": [
+      "Can you tell me about BankMobile Vibe?",
+      "Could you provide information on BankMobile Vibe?",
+      "What exactly does BankMobile Vibe entail"
+    ],
+    "answer": "BankMobile is a division of Customers Bank that provides refund management services to colleges and universities."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "I just filled out the appeals form. When will I be able to upload my documents?",
+    "questions": [
+      "I completed the appeal form and am wondering when I can upload my documents.",
+      "The appeals application is done; when can I submit my papers?",
+      "I have finished filling out the appeals form, now I'm curious when I can send in my documents."
+    ],
+    "answer": "You should receive to-do list items in your myUH portal in 2-3 business days."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What is the decision timeline for my appeal?",
+    "questions": [
+      "Can you tell me when I can expect a decision on my appeal?",
+      "When will I know the outcome of my appeal?",
+      "Is there a specific timeline for when my appeal decision will be made?",
+      "When should I anticipate receiving a response to my appeal?"
+    ],
+    "answer": "There is not currently a timeline for appeals. Please keep an eye on your email for any updates."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What happens if I now meet assured admission?",
+    "questions": [
+      "If I meet assured admission now, what will be the outcome?",
+      "Will anything occur if I obtain assured admission at this moment?",
+      "If I obtain assured admission now, what will take place?"
+    ],
+    "answer": "There is no assured admission for appeal decisions and every application will be reviewed holistically."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Can Transfer students appeal?",
+    "questions": [
+      "Is it possible for transfer students to file an appeal?",
+      "Are transfer students allowed to make an appeal?",
+      "Are transfer students eligible to appeal a decision?",
+      "Can an appeal be submitted by transfer students?"
+    ],
+    "answer": "No, only Freshman students can appeal."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "Can International Freshman students appeal?",
+    "questions": [
+      "Is it possible for international freshman students to make an appeal?",
+      "Are appeals open to international freshman students?",
+      "Can international freshman students request an appeal?"
+    ],
+    "answer": "Yes."
+  },
+  {
+    "siteId": 10000,
+    "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+    "intentName": "What tips do you have for an appeals application?",
+    "questions": [
+      "Can you provide me with any advice for filing an appeals application?",
+      "What recommendations do you have when it comes to submitting an appeals application?",
+      "Any suggestions on writing a successful appeals application?"
+    ],
+    "answer": "Be sure to answer all parts of the personal statement prompt and include all extracurricular activities, community service, work experience, accomplishments, or other pertinent activities achieved throughout high school. Don't forget to include hours per week and weeks per year."
+  }
+]

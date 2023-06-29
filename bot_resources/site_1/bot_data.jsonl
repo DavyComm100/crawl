@@ -1,0 +1,9 @@
+{
+  "botid": "f19e8b8b-9233-4491-8466-934d3ac2b279",
+  "intentName": "Greeting",
+  "questions": [
+    "hi",
+    "hello"
+  ],
+  "answer": "Hi, how can I help you?"
+}
