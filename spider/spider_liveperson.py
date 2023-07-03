@@ -20,7 +20,7 @@ HTTP_URL_PATTERN = r'^http[s]*://.+'
 
 def crawl():
     df_init= {'Name':[], 'LivePerson':[], 'Website':[]}
-    googleUrl = "https://www.google.com.hk/search?hl=en&q="
+    googleUrl = "https://www.google.com/search?hl=en&q="
     HEADERS = ({'User-Agent':
             'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
             (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',\
@@ -55,13 +55,13 @@ def crawl():
                             link = qPara[0]
                         break 
                 print(link)
-                df_init['Name'].append(name)
+                #df_init['Name'].append(name)
                 #df_init['Website'].append(link)
                 webpagecontent = requests.get(link)
                 if webpagecontent.status_code == 302:
                     link = webpagecontent.headers["Location"]                    
                     webpagecontent = requests.get(link)
-                            
+                df_init['Name'].append(name)           
                 df_init['Website'].append(link)
                 if webpagecontent.status_code != 200:
                     df_init['LivePerson'].append(str(webpagecontent.status_code))
@@ -71,10 +71,10 @@ def crawl():
                     else:
                         df_init['LivePerson'].append('')
             else:
-                #print('no match')
+                print('no match')
                 df_init['Name'].append(name)
                 df_init['LivePerson'].append('')
-                df_init['Website'].append('')
+                df_init['Website'].append('no match')
         except:
             df_init['Name'].append(name)
             df_init['LivePerson'].append('ERROR')
