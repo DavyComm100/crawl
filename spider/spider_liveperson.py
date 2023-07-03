@@ -27,7 +27,7 @@ def crawl():
             (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',\
             'Accept-Language': 'en-US, en;q=1',\
             'referer':'https://www.google.com/'})
-    names = extract_xls(os.path.join(os.getcwd(),'spider/data/CAUniversities.xls'))
+    names = extract_xls(os.path.join(os.getcwd(),'spider/data/USUniversities.xls'))
     #names = ["godaddy"]
     print(len(names))
     count=0
@@ -58,22 +58,28 @@ def crawl():
                             link = qPara[0]
                         break 
                 print(link)
-                #df_init['Name'].append(name)
-                #df_init['Website'].append(link)
-                webpagecontent = requests.get(link)
-                if webpagecontent.status_code == 302:
-                    link = webpagecontent.headers["Location"]                    
-                    webpagecontent = requests.get(link)
-                
-                df_init['Name'].append(name)            
-                df_init['Website'].append(link)
-                if webpagecontent.status_code != 200:
-                    df_init['LivePerson'].append(str(webpagecontent.status_code))
+                if link.startswith('https://free-apply.com'):
+                    print('no match')
+                    df_init['Name'].append(name)
+                    df_init['LivePerson'].append('')
+                    df_init['Website'].append('')
                 else:
-                    if 'liveperson.net' in webpagecontent.text:
-                        df_init['LivePerson'].append('Yes')
+                    #df_init['Name'].append(name)
+                    #df_init['Website'].append(link)
+                    webpagecontent = requests.get(link)
+                    if webpagecontent.status_code == 302:
+                        link = webpagecontent.headers["Location"]                    
+                        webpagecontent = requests.get(link)
+                    
+                    df_init['Name'].append(name)            
+                    df_init['Website'].append(link)
+                    if webpagecontent.status_code != 200:
+                        df_init['LivePerson'].append(str(webpagecontent.status_code))
                     else:
-                        df_init['LivePerson'].append('')
+                        if 'liveperson.net' in webpagecontent.text:
+                            df_init['LivePerson'].append('Yes')
+                        else:
+                            df_init['LivePerson'].append('')
             else:
                 print('no match')
                 df_init['Name'].append(name)
@@ -89,13 +95,13 @@ def crawl():
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
-            filename = 'listcollegeslivepersonca'+str(index)+'.csv'
+            filename = 'listcollegeslivepersonUS'+str(index)+'.csv'
             df.to_csv(filename, index=False, encoding="utf-8-sig")
-            time.sleep(30)
+            time.sleep(3)
 
     print(len(df_init['Name']))
     df = pd.DataFrame(df_init)
-    filename = 'listcollegeslivepersonca.csv'
+    filename = 'listcollegeslivepersonUS.csv'
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
 
