@@ -7,6 +7,7 @@ from lxml import etree
 import pandas as pd
 import ssl
 import re
+import time
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
 
@@ -24,14 +25,16 @@ def crawl():
     HEADERS = ({'User-Agent':
             'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
             (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',\
-            'Accept-Language': 'en-US, en;q=1'})
+            'Accept-Language': 'en-US, en;q=1',\
+            'referer':'https://www.google.com/'})
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CAUniversities.xls'))
     #names = ["godaddy"]
     print(len(names))
     count=0
     index=0
     for name in names:
-        url = googleUrl + name
+        time.sleep(3)
+        url = googleUrl + name + " live chat"
         try:
             webpage = requests.get(url, headers=HEADERS)
             soup = BeautifulSoup(webpage.content, "html.parser")
@@ -61,7 +64,8 @@ def crawl():
                 if webpagecontent.status_code == 302:
                     link = webpagecontent.headers["Location"]                    
                     webpagecontent = requests.get(link)
-                df_init['Name'].append(name)           
+                
+                df_init['Name'].append(name)            
                 df_init['Website'].append(link)
                 if webpagecontent.status_code != 200:
                     df_init['LivePerson'].append(str(webpagecontent.status_code))
@@ -74,19 +78,20 @@ def crawl():
                 print('no match')
                 df_init['Name'].append(name)
                 df_init['LivePerson'].append('')
-                df_init['Website'].append('no match')
+                df_init['Website'].append('')
         except:
             df_init['Name'].append(name)
             df_init['LivePerson'].append('ERROR')
             df_init['Website'].append('')
         count = count +1
-        if count == 10:
+        if count == 50:
             count = 0
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
             filename = 'listcollegeslivepersonca'+str(index)+'.csv'
             df.to_csv(filename, index=False, encoding="utf-8-sig")
+            time.sleep(30)
 
     print(len(df_init['Name']))
     df = pd.DataFrame(df_init)
