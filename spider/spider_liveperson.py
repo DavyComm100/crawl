@@ -84,7 +84,7 @@ def crawl():
             df_init['LivePerson'].append('ERROR')
             df_init['Website'].append('')
         count = count +1
-        if count == 50:
+        if count == 60:
             count = 0
             index=index+1
             print(len(df_init['Name']))
