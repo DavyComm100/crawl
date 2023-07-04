@@ -126,9 +126,7 @@ def crawl(url):
 
     print(len(df_init['Title']))
     df = pd.DataFrame(df_init)
-    filename ='WebsiteContent_' + url.replace('http://', '').replace('https://', '').replace('/', '_')
-    .replace(':', '_').replace('*', '_').replace('?', '_').replace('"', '_').replace('<', '_') 
-    .replace('>', '_').replace('|', '_') + '.csv'
+    filename ='WebsiteContent_' + url.replace('http://', '').replace('https://', '').replace('/', '_').replace(':', '_').replace('*', '_').replace('?', '_').replace('"', '_').replace('<', '_') .replace('>', '_').replace('|', '_') + '.csv'
     df.to_csv(filename, index=False, encoding="utf-8-sig")
     return url
 
