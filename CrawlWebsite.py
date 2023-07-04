@@ -11,6 +11,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse
 from readability import Document
 import os
+import pandas as pd
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
