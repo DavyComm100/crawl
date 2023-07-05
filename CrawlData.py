@@ -62,12 +62,19 @@ def get_domain_hyperlinks(domain_path, domain, url):
                     clean_link = link
             elif link.endswith(".php"):
                 if url.endswith(".php"):
+                    continue
+                if not url.endswith("/"):
+                    url = url + "/"
+                newlink = urllib.parse.urljoin(url,link)
+                if re.match(pattern,newlink):   
+                    clean_link = newlink
+                """ if url.endswith(".php"):
                     url = remove_last_segment(url)
                 if not url.endswith("/"):
                     url=url + "/"
                 link = urllib.parse.urljoin(url,link)
                 if re.match(pattern,link):   
-                    clean_link = link
+                    clean_link = link """
             elif link.startswith("#") or link.startswith("mailto:"):
                 continue
           
@@ -133,12 +140,5 @@ def crawl(url):
     workbook.save('data.xlsx')
     return url
 
-
-def remove_newlines(serie):
-    serie = serie.replace('\n', ' ')
-    serie = serie.replace('\\n', ' ')
-    serie = serie.replace('  ', ' ')
-    serie = serie.replace('  ', ' ')
-    return serie
 
 crawl("https://uh.edu/financial/")
