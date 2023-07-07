@@ -33,9 +33,9 @@ def get_websitecontent(url):
     return r.html
 
 # Function to get the hyperlinks from a URL
-def get_hyperlinks(url):
+def get_hyperlinks(r):
     try:       
-        r = get_websitecontent(url)
+        #r = get_websitecontent(url)
         urls = []
         items = r.find("a")
         for link in items:
@@ -46,10 +46,10 @@ def get_hyperlinks(url):
         return []
 
 # Function to get the hyperlinks from a URL that are within the same domain
-def get_domain_hyperlinks(base_address, domain, url):
+def get_domain_hyperlinks(base_address, domain, r):
     clean_links = []
     pattern = re.compile(r'.*{}.*'.format(re.escape(base_address)))
-    links = set(get_hyperlinks(url))
+    links = set(get_hyperlinks(r))
     for link in links:
         clean_link = None
         if link == None:
@@ -123,7 +123,7 @@ def crawl(siteid, url):
                 titles.append(title)
 
             # Get the hyperlinks from the URL and add them to the queue
-            for link in get_domain_hyperlinks(base_address,domain, url):
+            for link in get_domain_hyperlinks(base_address,domain, response):
                 if link not in seen:
                     queue.append(link)
                     seen.add(link)
