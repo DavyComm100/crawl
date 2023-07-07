@@ -42,6 +42,7 @@ def get_websitecontent(url):
 def crawl():
     df_init= {'Name':[], 'LivePerson':[], 'Website':[]}
     googleUrl = "https://www.google.com/search?hl=en&q="
+    print(os.getcwd())
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
     #names = ["godaddy"]
     print(len(names))
