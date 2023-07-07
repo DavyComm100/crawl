@@ -44,7 +44,7 @@ def crawl():
     googleUrl = "https://www.google.com/search?hl=en&q="
     print(os.getcwd())
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
-    names = ["godaddy"]
+    #names = ["godaddy"]
     print(len(names))
     count=0
     index=0
