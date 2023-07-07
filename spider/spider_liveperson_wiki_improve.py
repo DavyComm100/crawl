@@ -84,8 +84,8 @@ def crawl():
         #time.sleep(3)
         name = item["name"]
         website = item["website"]
-        url = wikiUrl + name.replace(' ', '_')
-        if website.strip() != "":
+        url = wikiUrl + name.replace(' ', '_').replace('&', '%26')
+        if website.strip() != "" and 'wikipedia.org' not in website and 'youtube.com' not in website and 'worldcat.org' not in website:
             crawlWebsite(name, website)
         else:
             try:
