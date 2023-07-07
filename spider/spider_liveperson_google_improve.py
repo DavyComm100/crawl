@@ -44,7 +44,7 @@ def crawl():
     googleUrl = "https://www.google.com/search?hl=en&q="
     print(os.getcwd())
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
-    names = ["godaddy"]
+    #names = ["godaddy"]
     print(len(names))
     count=0
     index=0
@@ -115,13 +115,13 @@ def crawl():
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
-            filename = 'USGoogle'+str(index)+'.csv'
+            filename = 'CAGoogle'+str(index)+'.csv'
             df.to_csv(filename, index=False, encoding="utf-8-sig")
             time.sleep(3)
 
     print(len(df_init['Name']))
     df = pd.DataFrame(df_init)
-    filename = 'USGoogle.csv'
+    filename = 'CAGoogle.csv'
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
 
