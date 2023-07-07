@@ -26,11 +26,15 @@ def get_websitecontent(url):
         # 创建session对象
         session = requests_html.HTMLSession()
         HEADERS = {
-            "User-Agent":user_agent,
-            'Accept-Language': 'en-US, en;q=1'
+            "User-Agent":user_agent
         }
         # 请求Url
         r = session.get(url,headers=HEADERS, timeout=15)
+        if len(r.history) > 0:
+            his = r.history[len(r.history)-1]
+            if his.status_code == 302:
+                link = his.headers["Location"]                
+                r = session.get(link,headers=HEADERS, timeout=15)        
         # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
         r.html.render(scrolldown=6, sleep=1, timeout=300)
         return r.html
@@ -41,13 +45,8 @@ def get_websitecontent(url):
 def crawl():
     df_init= {'Name':[], 'LivePerson':[], 'Website':[]}
     googleUrl = "https://www.google.com/search?hl=en&q="
-    HEADERS = ({'User-Agent':
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 \
-            (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',\
-            'Accept-Language': 'en-US, en;q=1',\
-            'referer':'https://www.google.com/'})
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
-    names = ["godaddy"]
+    #names = ["godaddy"]
     print(len(names))
     count=0
     index=0
@@ -84,18 +83,15 @@ def crawl():
                     df_init['Website'].append('')
                 else:
                     #df_init['Name'].append(name)
-                    #df_init['Website'].append(link)
-                    webpagecontent = requests.get(link, timeout=10)
-                    if webpagecontent.status_code == 302:
-                        link = webpagecontent.headers["Location"]                    
-                    
-                    print(link)
+                    #df_init['Website'].append(link)                                              
                     webpagecontent = get_websitecontent(link)
-                    
+                    #liveper.sn
+                    print(link)
                     df_init['Name'].append(name)            
                     df_init['Website'].append(link)
                     
-                    if 'liveperson.net' in webpagecontent.html:
+                    if 'liveperson.net' in webpagecontent.html or 'liveperson' in webpagecontent.html or 'liveper.sn' in webpagecontent.html:
+                        print('Yes')
                         df_init['LivePerson'].append('Yes')
                     else:
                         df_init['LivePerson'].append('')
