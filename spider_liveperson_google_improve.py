@@ -86,7 +86,7 @@ def crawl():
                     #df_init['Website'].append(link)
                     try:                                              
                         webpagecontent = get_websitecontent(link)        
-                        print(link)
+                        #print(link)
                         df_init['Name'].append(name)            
                         df_init['Website'].append(link)
                         
@@ -115,13 +115,13 @@ def crawl():
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
-            filename = 'USGoogle'+str(index)+'.csv'
+            filename = 'CAGoogle'+str(index)+'.csv'
             df.to_csv(filename, index=False, encoding="utf-8-sig")
             time.sleep(3)
 
     print(len(df_init['Name']))
     df = pd.DataFrame(df_init)
-    filename = 'USGoogle.csv'
+    filename = 'CAGoogle.csv'
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
 
