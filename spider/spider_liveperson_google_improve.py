@@ -89,6 +89,7 @@ def crawl():
                     if webpagecontent.status_code == 302:
                         link = webpagecontent.headers["Location"]                    
                     
+                    print(link)
                     webpagecontent = get_websitecontent(link)
                     
                     df_init['Name'].append(name)            
