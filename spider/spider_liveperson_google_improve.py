@@ -11,6 +11,7 @@ import re
 import time
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
+import urllib.parse
 
 ssl._create_default_https_context = ssl._create_unverified_context
 HTTP_URL_PATTERN = r'^http[s]*://.+'
@@ -51,8 +52,10 @@ def crawl():
     count=0
     index=0
     for name in names:
-        time.sleep(3)
-        url = googleUrl + name + ' live chat'
+        param = urllib.parse.quote_plus(name + ' live chat')
+        #time.sleep(3)
+        url = googleUrl + param
+        #url = googleUrl + urllib.parse.urlencode(name + ' live chat')
         try:
             webpage = get_websitecontent(url)
             #soup = BeautifulSoup(webpage, "html.parser")
