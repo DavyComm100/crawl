@@ -1,45 +1,49 @@
 
-import requests
 import re
 import urllib.request
-from bs4 import BeautifulSoup
 from collections import deque
 from html.parser import HTMLParser
 from urllib.parse import urlparse
 from readability import Document
 import os
-import openpyxl
+import json
 import urllib.parse
 import time
 import requests_html
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
+def get_websitecontent(url):
+    # 自动生成一个useragent
+    user_agent = requests_html.user_agent()
+    # 创建session对象
+    session = requests_html.HTMLSession()
+    HEADERS = {
+        "User-Agent":user_agent
+    }
+    # 请求Url
+    r = session.get(url,headers=HEADERS, timeout=15)
+    if len(r.history) > 0:
+        his = r.history[len(r.history)-1]
+        if his.status_code == 302:
+            link = his.headers["Location"]                
+            r = session.get(link,headers=HEADERS, timeout=15)        
+    # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
+    r.html.render(scrolldown=6, sleep=1, timeout=30)
+    return r.html
+
 # Function to get the hyperlinks from a URL
 def get_hyperlinks(url):
-    try:
-        # 自动生成一个useragent
-        user_agent = requests_html.user_agent()
-        # 创建session对象
-        session = requests_html.HTMLSession()
-        headers = {
-            "User-Agent":user_agent
-        }
-        # 请求Url
-        r = session.get(url,headers=headers)
-        # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
-        r.html.render(scrolldown=5, sleep=1, timeout=200)
-
+    try:       
+        r = get_websitecontent(url)
+        urls = []
+        items = r.find("a")
+        for link in items:
+            if "href" in link.attrs:
+                urls.append(link.attrs["href"])
+        return urls
     except Exception as ex:
-        text=""
         return []
-
-    urls = []
-    items = r.html.find("a")
-    # 获取href值
-    for link in items:
-       urls.append(link.attrs["href"])
-    return urls
 
 # Function to get the hyperlinks from a URL that are within the same domain
 def get_domain_hyperlinks(base_address, domain, url):
@@ -50,12 +54,14 @@ def get_domain_hyperlinks(base_address, domain, url):
         clean_link = None
         if link == None:
             continue
-
+        print(link)
         # If the link is a URL, check if it is within the same domain
         if re.search(HTTP_URL_PATTERN, link):
             # Parse the URL and check if the domain is the same
             if re.match(pattern,link):
                 clean_link = link
+                if clean_link.endswith(".pdf"):
+                    continue
 
         # If the link is not a URL, check if it is a relative link
         else:
@@ -64,7 +70,7 @@ def get_domain_hyperlinks(base_address, domain, url):
                 link = "https://" + domain + "/" + link
                 if re.match(pattern,link):
                     clean_link = link
-            elif link.startswith("#") or link.startswith("mailto:"):
+            elif link.startswith("#") or link.startswith("mailto:") or link.startswith("tel:"):
                 continue
             elif link.endswith(".pdf"):
                 continue
@@ -78,7 +84,7 @@ def get_domain_hyperlinks(base_address, domain, url):
     return list(set(clean_links))
 
 
-def crawl(url):
+def crawl(siteid, url):
     # Parse the URL and get the domain
     url_obj = urlparse(url)
     domain = url_obj.netloc
@@ -92,32 +98,28 @@ def crawl(url):
     # Create a set to store the URLs that have already been seen (no duplicates)
     seen = {url}
     titles = []
-    workbook = openpyxl.Workbook()
-    sheet = workbook.active
-    sheet.append(["Title","URL","Content"])
+    dataTosave = []
     # While the queue is not empty, continue crawling
     while queue:
         try:
         # Get the next URL from the queue
             url = queue.pop()
-            response = requests.get(url)
-            doc = Document(response.content)
-            doc.title()
+            response = get_websitecontent(url)
+            doc = Document(response.html)
+            title = doc.title()
             content = doc.summary()
-            if not os.path.exists("Output"):
-                os.makedirs("Output")
+            if not os.path.exists("htmlResult"):
+                os.makedirs("htmlResult")
+            if not os.path.exists("htmlResult/"+ str(siteid)):
+                os.makedirs("htmlResult/"+ str(siteid))
 
-            # Get the text from the URL using BeautifulSoup
-            soup = BeautifulSoup(requests.get(url).text, "html.parser")
-            title = soup.title.string
             if title not in titles:
-                filename = os.path.join("Output", f"{title}.html")
+                filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)
             
-                data = [title, url, content]
                 print(f"title:{title},url:{url},time:{time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())}")
-                sheet.append(data)
+                dataTosave.append({"title": title, "url":url, "content": content })                
                 titles.append(title)
 
             # Get the hyperlinks from the URL and add them to the queue
@@ -126,12 +128,17 @@ def crawl(url):
                     queue.append(link)
                     seen.add(link)
         except Exception as ex:
-            text=""
+            dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR" })                
              #print(f"url get failed: {url}")
 
-    # 保存Excel文件
-    workbook.save('data.xlsx')
+    # Serializing json
+    json_object = json.dumps(dataTosave, indent=4)
+    
+    # Writing to json file and upload to S3
+    filename = str(siteid) + "_" + url.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '') + ".json"
+    with open(filename, "w") as outfile:
+        outfile.write(json_object)
     return url
 
 
-crawl("https://uh.edu/financial/")
+crawl(10000, "https://uh.edu/financial/")

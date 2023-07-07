@@ -1,78 +1,80 @@
-# -*- coding: utf-8 -*-
 
-#from utils import *
-
-import requests
 import re
 import urllib.request
-from bs4 import BeautifulSoup
 from collections import deque
 from html.parser import HTMLParser
 from urllib.parse import urlparse
 from readability import Document
 import os
-import pandas as pd
+import json
+import urllib.parse
+import time
+import requests_html
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
-
-# Create a class to parse the HTML and get the hyperlinks
-class HyperlinkParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.hyperlinks = []
-
-    # Override the HTMLParser's handle_starttag method to get the hyperlinks
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-
-        # If the tag is an anchor tag, and it has a href attribute, add the href attribute to the list of hyperlinks
-        if tag == "a" and "href" in attrs:
-            self.hyperlinks.append(attrs["href"])
-
+def get_websitecontent(url):
+    # 自动生成一个useragent
+    user_agent = requests_html.user_agent()
+    # 创建session对象
+    session = requests_html.HTMLSession()
+    HEADERS = {
+        "User-Agent":user_agent
+    }
+    # 请求Url
+    r = session.get(url,headers=HEADERS, timeout=15)
+    if len(r.history) > 0:
+        his = r.history[len(r.history)-1]
+        if his.status_code == 302:
+            link = his.headers["Location"]                
+            r = session.get(link,headers=HEADERS, timeout=15)        
+    # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
+    r.html.render(scrolldown=6, sleep=1, timeout=30)
+    return r.html
 
 # Function to get the hyperlinks from a URL
 def get_hyperlinks(url):
-    try:
-        with urllib.request.urlopen(url) as response:
-            if not response.info().get('Content-Type').startswith("text/html"):
-                return []
-            html = response.read().decode('utf-8')
-    except Exception:
+    try:       
+        r = get_websitecontent(url)
+        urls = []
+        items = r.find("a")
+        for link in items:
+            if "href" in link.attrs:
+                urls.append(link.attrs["href"])
+        return urls
+    except Exception as ex:
         return []
-    parser = HyperlinkParser()
-    parser.feed(html)
-    return parser.hyperlinks
-
 
 # Function to get the hyperlinks from a URL that are within the same domain
-def get_domain_hyperlinks(local_domain, url):
+def get_domain_hyperlinks(base_address, domain, url):
     clean_links = []
-    for link in set(get_hyperlinks(url)):
+    pattern = re.compile(r'.*{}.*'.format(re.escape(base_address)))
+    links = set(get_hyperlinks(url))
+    for link in links:
         clean_link = None
-
+        if link == None:
+            continue
+        print(link)
         # If the link is a URL, check if it is within the same domain
         if re.search(HTTP_URL_PATTERN, link):
-            if link.startswith(url):
-                clean_link = link
             # Parse the URL and check if the domain is the same
-            #url_obj = urlparse(link)
-            #if url_obj.netloc == local_domain:
-                #clean_link = link
+            if re.match(pattern,link):
+                clean_link = link
+                if clean_link.endswith(".pdf"):
+                    continue
 
         # If the link is not a URL, check if it is a relative link
         else:
             if link.startswith("/"):
                 link = link[1:]
-            elif link.startswith("#") or link.startswith("mailto:"):
+                link = "https://" + domain + "/" + link
+                if re.match(pattern,link):
+                    clean_link = link
+            elif link.startswith("#") or link.startswith("mailto:") or link.startswith("tel:"):
                 continue
-            if url.startswith("https://"):
-                link = "https://" + local_domain + "/" + link
-            elif url.startswith("http://"):
-                link = "http://" + local_domain + "/" + link
-            if link.startswith(url):
-                clean_link = link
-
+            elif link.endswith(".pdf"):
+                continue
+          
         if clean_link is not None:
             if clean_link.endswith("/"):
                 clean_link = clean_link[:-1]
@@ -82,61 +84,61 @@ def get_domain_hyperlinks(local_domain, url):
     return list(set(clean_links))
 
 
-def crawl(url):
-    df_init= {'Title':[], 'URL':[], 'Content':[]}
+def crawl(siteid, url):
     # Parse the URL and get the domain
-    local_domain = urlparse(url).netloc
-
+    url_obj = urlparse(url)
+    domain = url_obj.netloc
+    path = url_obj.path
+    base_address = domain + path
+    # get the base host to filter link.
+    base_address = base_address.replace('www.','')
     # Create a queue to store the URLs to crawl
     queue = deque([url])
 
     # Create a set to store the URLs that have already been seen (no duplicates)
     seen = {url}
-
+    titles = []
+    dataTosave = []
     # While the queue is not empty, continue crawling
     while queue:
-
-        # Get the next URL from the queue
-        url = queue.pop()
-
         try:
-            response = requests.get(url)
-            doc = Document(response.content)
+        # Get the next URL from the queue
+            url = queue.pop()
+            response = get_websitecontent(url)
+            doc = Document(response.html)
             title = doc.title()
             content = doc.summary()
-            df_init['Title'].append(title)
-            df_init['URL'].append(url)
-            df_init['Content'].append(content)
-            if not os.path.exists("Output"):
-                os.makedirs("Output")
+            if not os.path.exists("htmlResult"):
+                os.makedirs("htmlResult")
+            if not os.path.exists("htmlResult/"+ str(siteid)):
+                os.makedirs("htmlResult/"+ str(siteid))
 
-            # Get the text from the URL using BeautifulSoup
-            #soup = BeautifulSoup(requests.get(url).text, "html.parser")
-            #title = soup.title.string
-            filename = os.path.join("Output", f"{title}.html")
-            with open(filename, 'w', encoding='utf-8') as f:
-                f.write(content)
-        except:
-            text = ""
+            if title not in titles:
+                filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write(content)
+            
+                print(f"title:{title},url:{url},time:{time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())}")
+                dataTosave.append({"title": title, "url":url, "content": content })                
+                titles.append(title)
 
-        # Get the hyperlinks from the URL and add them to the queue
-        for link in get_domain_hyperlinks(local_domain, url):
-            if link not in seen:
-                queue.append(link)
-                seen.add(link)
+            # Get the hyperlinks from the URL and add them to the queue
+            for link in get_domain_hyperlinks(base_address,domain, url):
+                if link not in seen:
+                    queue.append(link)
+                    seen.add(link)
+        except Exception as ex:
+            dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR" })                
+             #print(f"url get failed: {url}")
 
-    print(len(df_init['Title']))
-    df = pd.DataFrame(df_init)
-    filename ='WebsiteContent_' + url.replace('http://', '').replace('https://', '').replace('/', '_').replace(':', '_').replace('*', '_').replace('?', '_').replace('"', '_').replace('<', '_') .replace('>', '_').replace('|', '_') + '.csv'
-    df.to_csv(filename, index=False, encoding="utf-8-sig")
+    # Serializing json
+    json_object = json.dumps(dataTosave, indent=4)
+    
+    # Writing to json file and upload to S3
+    filename = str(siteid) + "_" + url.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '') + ".json"
+    with open(filename, "w") as outfile:
+        outfile.write(json_object)
     return url
 
 
-def remove_newlines(serie):
-    serie = serie.replace('\n', ' ')
-    serie = serie.replace('\\n', ' ')
-    serie = serie.replace('  ', ' ')
-    serie = serie.replace('  ', ' ')
-    return serie
-
-crawl("https://uh.edu/financial/")
+crawl(10000, "https://uh.edu/financial/")
