@@ -44,7 +44,7 @@ def crawl():
     googleUrl = "https://www.google.com/search?hl=en&q="
     print(os.getcwd())
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
-    #names = ["godaddy"]
+    names = ["godaddy"]
     print(len(names))
     count=0
     index=0
@@ -86,7 +86,7 @@ def crawl():
                     #df_init['Website'].append(link)
                     try:                                              
                         webpagecontent = get_websitecontent(link)        
-                        print(link)
+                        #print(link)
                         df_init['Name'].append(name)            
                         df_init['Website'].append(link)
                         
