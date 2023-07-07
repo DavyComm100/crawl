@@ -46,7 +46,7 @@ def crawl():
             (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',\
             'Accept-Language': 'en-US, en;q=1',\
             'referer':'https://www.google.com/'})
-    names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies2.xls'))
+    names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
     names = ["godaddy"]
     print(len(names))
     count=0
