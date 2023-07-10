@@ -1,137 +1,81 @@
-title:University of Houston Costs & Financial Aid - University of Houston,url:https://uh.edu/financial/,time:2023-07-10 07:05:55
-title:University of Houston Alternative Loans - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/ALT,time:2023-07-10 07:06:01
-title:Tuition & Fees - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees,time:2023-07-10 07:06:06
-title:Undergraduate Tuition - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition,time:2023-07-10 07:06:11
-title:College of Arts Degrees by Major - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition/tuition-majors,time:2023-07-10 07:06:15
-title:Find your Financial Aid Advisor - University of Houston,url:http://uh.edu/financial/find-advisor,time:2023-07-10 07:06:19
-title:University of Houston - Contact Us - University of Houston,url:http://uh.edu/financial/contact,time:2023-07-10 07:06:24
-title:Net Price Calculator - University of Houston,url:https://www.uh.edu/financial/net-price-calculator,time:2023-07-10 07:06:29
-title:University of Houston  Billing Due Dates - University of Houston,url:https://uh.edu/financial/payment/billing-due-dates,time:2023-07-10 07:06:33
-title:Refunds FAQ - University of Houston,url:https://uh.edu/financial/payment/refunds-faq,time:2023-07-10 07:06:37
-title:Tuition and Fees Exemptions and Waiver Information - University of Houston,url:https://uh.edu/financial/payment/Fee-Waivers,time:2023-07-10 07:06:42
-title:University of Houston  Payment FAQ - University of Houston,url:https://uh.edu/financial/payment/faq,time:2023-07-10 07:06:46
-title:University of Houston  Methods Of Payment - University of Houston,url:https://uh.edu/financial/payment/method-payment,time:2023-07-10 07:06:50
-title:Foreign Currency Transactions - University of Houston,url:https://uh.edu/financial/payment/method-payment/wire-transfer,time:2023-07-10 07:06:54
-title:University of Houston SBS Forms - University of Houston,url:https://uh.edu/financial/payment/forms,time:2023-07-10 07:06:59
-title:University of Houston  Tuition Rebate - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives/tuition-rebate,time:2023-07-10 07:07:03
-title:University of Houston  Cougar Promise - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives/cougar-promise,time:2023-07-10 07:07:08
-title:University of Houston  Grants - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/grants/#towards,time:2023-07-10 07:07:12
-title:Senate Bill 1528 - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/senate-bill-1528,time:2023-07-10 07:07:16
-title:University of Houston  Withdrawal Policy - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/withdrawal-policy,time:2023-07-10 07:07:21
-title:Satisfactory Academic Progress - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/satisfactory-academic-progress,time:2023-07-10 07:07:26
-title:Satisfactory Academic Progress FAQS - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/satisfactory-academic-progress/Satisfactory%20Academic%20Progress%20FAQS,time:2023-07-10 07:07:30
-title:Undergraduate Financial Forms - University of Houston,url:https://uh.edu/financial/undergraduate/forms/index.php#sap,time:2023-07-10 07:07:39
-title:University of Houston Summer Aid - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/summer-aid,time:2023-07-10 07:07:49
-title:Payment Information - University of Houston,url:http://www.uh.edu/financial/payment,time:2023-07-10 07:07:58
-title:University of Houston  Billing Due Dates - University of Houston,url:http://uh.edu/financial/payment/billing-due-dates,time:2023-07-10 07:08:02
-title:Spring Aid - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/spring-aid,time:2023-07-10 07:08:29
-title:Spring Aid FAQs - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/spring-aid/spring-aid-faqs,time:2023-07-10 07:08:33
-title:University of Houston  Billing Due Dates - University of Houston,url:http://www.uh.edu/financial/payment/billing-due-dates,time:2023-07-10 07:08:38
-title:University of Houston Federal Plus Loans,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/plus.php,time:2023-07-10 07:08:42
-title:University of Houston Costs & Financial Aid - University of Houston,url:http://www.uh.edu/financial/index,time:2023-07-10 07:08:47
-title:University of Houston  Refunds - University of Houston,url:http://www.uh.edu/financial/payment/refunds,time:2023-07-10 07:08:51
-title:University of Houston  Special Circumstances - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/special-circumstances,time:2023-07-10 07:09:06
-title:University of Houston  Maintaining Financial Aid Eligibility - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/maintaining-eligibility,time:2023-07-10 07:09:33
-title:University of Houston Document Upload Instructions - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/sfaupload,time:2023-07-10 07:09:46
-title:University of Houston  Special Circumstances - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/special-circumstances,time:2023-07-10 07:09:51
-title:University of Houston  Disbursement of Aid - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/disbursement-aid,time:2023-07-10 07:09:56
-title:University of Houston  Payment Plans - University of Houston,url:http://www.uh.edu/financial/payment/plans/#Book,time:2023-07-10 07:10:00
-title:University of Houston Summer Aid - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/summer-aid/#summerdisbursement,time:2023-07-10 07:10:04
-title:University of Houston Financial FAQs - University of Houston,url:http://www.uh.edu/financial/undergraduate/faq/#funds,time:2023-07-10 07:10:09
-title:University of Houston  Payment Plans - University of Houston,url:http://www.uh.edu/financial/payment/plans/index.php#Emergency,time:2023-07-10 07:10:13
-title:University of Houston Loans - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans,time:2023-07-10 07:10:18
-title:University of Houston College Access Loan (CAL) - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/CAL,time:2023-07-10 07:10:23
-title:University of Houston  Payment Plans - University of Houston,url:http://www.uh.edu/financial/payment/plans/index.php#IPP,time:2023-07-10 07:10:27
-title:University of Houston  Determining Your Award - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/determining-aid,time:2023-07-10 07:10:36
-title:University of Houston Document Upload Instructions - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/sfaupload,time:2023-07-10 07:10:40
-title:University of Houston  Fraud Policy - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/fraud-policy,time:2023-07-10 07:10:45
-title:TEACH Grant - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/grants/teach-grant,time:2023-07-10 07:10:49
-title:Scholarships - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/scholarships/#freshmen,time:2023-07-10 07:10:59
-title:The George Foundation  University of Houston - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/scholarships/george-foundation,time:2023-07-10 07:11:03
-title:University of Houston Tax Information - University of Houston,url:https://uh.edu/financial/payment/taxes,time:2023-07-10 07:11:36
-title:University of Houston  Payment FAQ - University of Houston,url:http://www.uh.edu/financial/payment/faq,time:2023-07-10 07:11:40
-title:University of Houston  Payment Plans - University of Houston,url:https://uh.edu/financial/payment/plans,time:2023-07-10 07:11:45
-Future exception was never retrieved
-future: <Future finished exception=NetworkError('Protocol error Target.sendMessageToTarget: Target closed.')>
-pyppeteer.errors.NetworkError: Protocol error Target.sendMessageToTarget: Target closed.
-Future exception was never retrieved
-future: <Future finished exception=NetworkError('Protocol error (Target.sendMessageToTarget): No session with given id')>
-pyppeteer.errors.NetworkError: Protocol error (Target.sendMessageToTarget): No session with given id
-title:University of Houston  Refunds - University of Houston,url:https://uh.edu/financial/payment/refunds,time:2023-07-10 07:11:49
-title:CLASS Degrees by Major - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition/fees-classification,time:2023-07-10 07:11:53
-title:Undergraduate Course Fees - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/course-fees,time:2023-07-10 07:11:57
-title:Undergraduate Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/required-fees,time:2023-07-10 07:12:02
-title:Undergraduate College Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/college-fees,time:2023-07-10 07:12:06
-title:How to Apply for Financial Aid - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply,time:2023-07-10 07:12:15
-title:UH Undergraduate Admissions - University of Houston,url:https://uh.edu/financial/undergraduate/admissions,time:2023-07-10 07:12:19
-title:Refer A Coog - University of Houston,url:https://www.uh.edu/financial/undergraduate/forms/hidden-sfa-files/referacoog.php,time:2023-07-10 07:12:24
-title:University of Houston Loans - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans,time:2023-07-10 07:12:34
-title:Financial Literacy - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy,time:2023-07-10 07:12:42
-title:Graduate Funding - University of Houston,url:https://uh.edu/financial/graduate/fellowships-scholarships,time:2023-07-10 07:12:46
-title:University of Houston Summer Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/summer-aid/index,time:2023-07-10 07:12:51
-title:University of Houston Loans - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/loans,time:2023-07-10 07:13:20
-title:University of Houston Financial FAQs - University of Houston,url:https://www.uh.edu/financial/undergraduate/faq,time:2023-07-10 07:13:25
-title:Undergraduate Costs & Financial Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate,time:2023-07-10 07:13:34
-title:University of Houston  Grants - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/grants,time:2023-07-10 07:13:38
-title:Types of Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid,time:2023-07-10 07:13:43
-title:Cougar Emergency Fund - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/cougar-emergency-fund,time:2023-07-10 07:13:47
-title:University of Houston  Refunds - University of Houston,url:https://www.uh.edu/financial/payment/refunds,time:2023-07-10 07:13:52
-title:University of Houston  Graduate Financial Information - University of Houston,url:https://www.uh.edu/financial/graduate,time:2023-07-10 07:13:56
-title:University of Houston Summer Aid - University of Houston,url:https://uh.edu/financial/graduate/summer-aid,time:2023-07-10 07:14:04
-title:University of Houston  Disbursement of Aid - University of Houston,url:https://uh.edu/financial/graduate/folder-with-redirect,time:2023-07-10 07:14:27
-title:COVID-19 Financial Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid,time:2023-07-10 07:14:31
-title:Previous COVID-19 Aid Sources - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid/covid-19-aid-archive,time:2023-07-10 07:14:36
-title:Higher Education Emergency Relief Fund Reporting - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid/cares-act-reporting,time:2023-07-10 07:14:40
-title:University of Houston Summer Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/summer-aid,time:2023-07-10 07:14:48
-title:University of Houston Alternative Loans - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/loans/ALT,time:2023-07-10 07:15:01
-title:University of Houston Financial Incentives - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/incentives,time:2023-07-10 07:15:10
-title:University of Houston Financial FAQs - University of Houston,url:http://uh.edu/financial/undergraduate/faq/index.php,time:2023-07-10 07:15:15
-title:University of Houston  Payment Plans - University of Houston,url:https://www.uh.edu/financial/payment/plans/index.php#Shortterm,time:2023-07-10 07:15:28
-title:University of Houston  Billing Due Dates - University of Houston,url:https://www.uh.edu/financial/payment/billing-due-dates,time:2023-07-10 07:15:37
-title:University of Houston  Payment Plans - University of Houston,url:https://www.uh.edu/financial/payment/plans,time:2023-07-10 07:15:41
-title:University of Houston SBS Forms - University of Houston,url:https://www.uh.edu/financial/payment/forms,time:2023-07-10 07:15:45
-title:University of Houston  Payment FAQ - University of Houston,url:https://www.uh.edu/financial/payment/faq,time:2023-07-10 07:15:50
-title:University of Houston  Methods Of Payment - University of Houston,url:https://www.uh.edu/financial/payment/method-payment,time:2023-07-10 07:15:54
-title:University of Houston Tax Information - University of Houston,url:https://www.uh.edu/financial/payment/taxes,time:2023-07-10 07:15:58
-title:University of Houston Alternative Loans - University of Houston,url:https://www.uh.edu/financial/graduate/loans/ALT-GRAD,time:2023-07-10 07:16:20
-title:University of Houston Alternative Loans - University of Houston,url:https://uh.edu/financial/graduate/loans/ALT-GRAD,time:2023-07-10 07:16:25
-title:Federal Perkins Loan Program - University of Houston,url:https://uh.edu/financial/graduate/loans/GRAD-Perkins-Loan,time:2023-07-10 07:16:29
-title:University of Houston Federal Graduate PLUS Loans - University of Houston,url:https://uh.edu/financial/graduate/loans/Grad-PLUS,time:2023-07-10 07:16:33
-title:University of Houston Financial Aid - University of Houston,url:https://www.uh.edu/financial/graduate/loans,time:2023-07-10 07:16:37
-title:University of Houston Alternative Loans - University of Houston,url:http://www.uh.edu/financial/graduate/loans/ALT-GRAD,time:2023-07-10 07:16:42
-title:University of Houston Federal Graduate PLUS Loans - University of Houston,url:http://www.uh.edu/financial/graduate/loans/Grad-PLUS,time:2023-07-10 07:16:46
-title:William D. Ford Federal Direct Loan Program - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/William-D-Ford-Direct-Loan-Program,time:2023-07-10 07:16:51
-title:University of Houston Costs & Financial Aid - University of Houston,url:http://www.uh.edu/financial,time:2023-07-10 07:17:01
-title:Financial Literacy Month - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/financial-literacy-month,time:2023-07-10 07:17:06
-title:University of Houston Work-Study - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid/work-study,time:2023-07-10 07:17:15
-title:University of Houston  Work-Study Manuals and Forms - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/manuals-forms,time:2023-07-10 07:17:19
-title:University of Houston  Workstudy FAQs - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/faq,time:2023-07-10 07:17:24
-title:University of Houston How to Apply for Work-Study - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/how-apply,time:2023-07-10 07:17:28
-title:Student Resources - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/student-resources,time:2023-07-10 07:17:38
-title:University of Houston Financial Aid - University of Houston,url:https://uh.edu/financial/graduate/loans,time:2023-07-10 07:17:43
-title:iGrad - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/igrad,time:2023-07-10 07:17:47
-title:Graduate Course Fees - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/course-fees,time:2023-07-10 07:17:56
-title:Graduate Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/required-fees,time:2023-07-10 07:18:00
-title:Graduate Tuition - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/tuition,time:2023-07-10 07:18:05
-title:CLASS Graduate Tuition and Fees by Program_Major - University of Houston,url:http://uh.edu/financial/graduate/tuition-fees/tuition/Class-grad-tuition/index,time:2023-07-10 07:18:09
-title:Graduate College Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/college-fees,time:2023-07-10 07:18:13
-title:University of Houston  Grants - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/grants,time:2023-07-10 07:18:18
-title:University of Houston Financial FAQs - University of Houston,url:https://uh.edu/financial/undergraduate/faq,time:2023-07-10 07:18:23
-title:University of Houston Alternative Loans - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/ALT,time:2023-07-10 07:18:32
-title:University of Houston Work-Study - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study,time:2023-07-10 07:18:42
-title:University of Houston Financial Incentives - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives,time:2023-07-10 07:19:00
-title:University of Houston Summer Aid - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/summer-aid,time:2023-07-10 07:19:09
-title:University of Houston Federal Parent PLUS Loans - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/Parent-PLUS,time:2023-07-10 07:19:14
-title:University of Houston B-On-Time Loan - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/Be-On-Time-Loan,time:2023-07-10 07:19:27
-title:University of Houston College Access Loan (CAL) - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/CAL,time:2023-07-10 07:19:40
-title:University of Houston Federal Parent PLUS Loans - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/Parent-PLUS,time:2023-07-10 07:19:50
-title:University of Houston Financial FAQs - University of Houston,url:http://uh.edu/financial/undergraduate/faq,time:2023-07-10 07:19:59
-title:University of Houston Costs & Financial Aid - University of Houston,url:https://www.uh.edu/financial,time:2023-07-10 07:20:10
-title:University of Houston  Graduate Financial Information - University of Houston,url:https://uh.edu/financial/graduate,time:2023-07-10 07:20:14
-title:Verification of Information - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/verification,time:2023-07-10 07:20:19
-title:University of Houston  Maintaining Financial Aid Eligibility - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/maintaining-eligibility,time:2023-07-10 07:20:29
-title:University of Houston  Payment Plans - University of Houston,url:http://www.uh.edu/financial/payment/plans,time:2023-07-10 07:20:34
-title:University of Houston Costs & Financial Aid - University of Houston,url:https://uh.edu/financial,time:2023-07-10 07:20:38
-title:University of Houston  Disbursement of Aid - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/disbursement-aid,time:2023-07-10 07:20:43
-title:University of Houston Financial FAQs - University of Houston,url:http://www.uh.edu/financial/undergraduate/faq,time:2023-07-10 07:20:57
-title:University of Houston  Determining Your Award - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/determining-aid,time:2023-07-10 07:21:02
+title:University of Houston: Costs & Financial Aid - University of Houston,url:https://uh.edu/financial/,time:2023-07-10 10:58:04
+title:Payment Information - University of Houston,url:https://uh.edu/financial/payment,time:2023-07-10 10:58:09
+title:University of Houston : Billing Due Dates: - University of Houston,url:https://uh.edu/financial/payment/billing-due-dates,time:2023-07-10 10:58:14
+title:University of Houston : Payment FAQ - University of Houston,url:http://www.uh.edu/financial/payment/faq,time:2023-07-10 10:58:18
+title:Undergraduate Financial Forms - University of Houston,url:https://uh.edu/financial/undergraduate/forms,time:2023-07-10 10:58:23
+title:UH Undergraduate Admissions - University of Houston,url:https://uh.edu/financial/undergraduate/admissions,time:2023-07-10 10:58:28
+title:Refer A Coog - University of Houston,url:https://www.uh.edu/financial/undergraduate/forms/hidden-sfa-files/referacoog.php,time:2023-07-10 10:58:32
+title:Satisfactory Academic Progress FAQS - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/satisfactory-academic-progress/Satisfactory%20Academic%20Progress%20FAQS,time:2023-07-10 10:58:36
+title:Senate Bill 1528 - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/senate-bill-1528,time:2023-07-10 10:58:50
+title:Net Price Calculator - University of Houston,url:https://uh.edu/financial/net-price-calculator/index,time:2023-07-10 10:58:54
+title:University of Houston : Maintaining Financial Aid Eligibility - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/maintaining-eligibility,time:2023-07-10 10:59:03
+title:University of Houston : Determining Your Award - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/determining-aid,time:2023-07-10 10:59:22
+title:Find your Financial Aid Advisor - University of Houston,url:http://www.uh.edu/financial/find-advisor,time:2023-07-10 10:59:26
+title:University of Houston : Withdrawal Policy - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/withdrawal-policy,time:2023-07-10 10:59:31
+title:University of Houston : Fraud Policy - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/fraud-policy,time:2023-07-10 10:59:36
+title:Satisfactory Academic Progress - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/satisfactory-academic-progress,time:2023-07-10 10:59:41
+title:University of Houston - Contact Us - University of Houston,url:http://www.uh.edu/financial/contact,time:2023-07-10 10:59:51
+title:University of Houston : Disbursement of Aid - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/disbursement-aid,time:2023-07-10 11:00:00
+title:University of Houston : Payment Plans - University of Houston,url:http://www.uh.edu/financial/payment/plans/#Book,time:2023-07-10 11:00:10
+title:University of Houston: Summer Aid - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/summer-aid/#summerdisbursement,time:2023-07-10 11:00:16
+title:Scholarships - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/scholarships,time:2023-07-10 11:00:25
+title:The George Foundation : University of Houston - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/scholarships/george-foundation,time:2023-07-10 11:00:30
+title:Cougar Emergency Fund - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/cougar-emergency-fund,time:2023-07-10 11:00:53
+title:University of Houston : Refunds - University of Houston,url:https://www.uh.edu/financial/payment/refunds,time:2023-07-10 11:00:57
+title:University of Houston: Work-Study - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study,time:2023-07-10 11:01:06
+title:University of Houston : Work-Study Manuals and Forms - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/manuals-forms,time:2023-07-10 11:01:11
+title:University of Houston : Workstudy FAQs - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/faq,time:2023-07-10 11:01:15
+title:University of Houston: How to Apply for Work-Study - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/work-study/how-apply,time:2023-07-10 11:01:20
+title:University of Houston: Alternative Loans - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/ALT,time:2023-07-10 11:01:25
+title:Federal Perkins Loan Program - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/Perkins-Loan,time:2023-07-10 11:01:30
+title:University of Houston: Federal Parent PLUS Loans - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/Parent-PLUS,time:2023-07-10 11:01:34
+title:University of Houston: College Access Loan (CAL) - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/CAL,time:2023-07-10 11:01:48
+title:William D. Ford Federal Direct Loan Program - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/William-D-Ford-Direct-Loan-Program,time:2023-07-10 11:01:53
+title:University of Houston: B-On-Time Loan - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/loans/Be-On-Time-Loan,time:2023-07-10 11:01:57
+title:University of Houston: Financial Incentives - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives,time:2023-07-10 11:02:01
+title:University of Houston: Financial FAQs - University of Houston,url:http://uh.edu/financial/undergraduate/faq/index.php,time:2023-07-10 11:02:06
+title:University of Houston: Loans - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/loans,time:2023-07-10 11:02:15
+title:University of Houston : Tuition Rebate - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives/tuition-rebate,time:2023-07-10 11:02:32
+title:University of Houston : Cougar Promise - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/incentives/cougar-promise,time:2023-07-10 11:02:37
+title:University of Houston : Grants - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/grants/#towards,time:2023-07-10 11:02:41
+title:COVID-19 Financial Aid - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid,time:2023-07-10 11:03:19
+title:Previous COVID-19 Aid Sources - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid/covid-19-aid-archive,time:2023-07-10 11:03:23
+title:Higher Education Emergency Relief Fund Reporting - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/covid-19-financial-aid/cares-act-reporting,time:2023-07-10 11:03:28
+title:Spring Aid - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/spring-aid,time:2023-07-10 11:03:36
+title:Spring Aid FAQs - University of Houston,url:https://uh.edu/financial/undergraduate/types-aid/spring-aid/spring-aid-faqs,time:2023-07-10 11:03:40
+title:University of Houston: Federal Plus Loans,url:http://www.uh.edu/financial/undergraduate/types-aid/loans/plus.php,time:2023-07-10 11:03:49
+title:University of Houston: Document Upload Instructions - University of Houston,url:http://www.uh.edu/financial/undergraduate/how-apply/sfaupload,time:2023-07-10 11:04:17
+title:Financial Literacy - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy,time:2023-07-10 11:04:25
+title:Graduate Funding - University of Houston,url:https://uh.edu/financial/graduate/fellowships-scholarships,time:2023-07-10 11:04:30
+title:University of Houston : Graduate Financial Information - University of Houston,url:https://www.uh.edu/financial/graduate,time:2023-07-10 11:04:48
+title:How to Apply for Financial Aid - University of Houston,url:https://uh.edu/financial/graduate/howtoapply,time:2023-07-10 11:05:11
+title:Types of Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate/types-aid,time:2023-07-10 11:05:55
+title:Undergraduate Costs & Financial Aid - University of Houston,url:https://www.uh.edu/financial/undergraduate,time:2023-07-10 11:06:13
+title:Tuition & Fees - University of Houston,url:https://www.uh.edu/financial/undergraduate/tuition-fees,time:2023-07-10 11:06:32
+title:Undergraduate Course Fees - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/course-fees,time:2023-07-10 11:06:36
+title:Undergraduate Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/required-fees,time:2023-07-10 11:06:53
+title:Undergraduate College Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/college-fees,time:2023-07-10 11:06:57
+title:Undergraduate Tuition - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition,time:2023-07-10 11:07:02
+title:College of Arts Degrees by Major - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition/tuition-majors,time:2023-07-10 11:07:06
+title:CLASS Degrees by Major - University of Houston,url:https://uh.edu/financial/undergraduate/tuition-fees/tuition/fees-classification,time:2023-07-10 11:07:15
+title:University of Houston: Financial Aid - University of Houston,url:https://www.uh.edu/financial/graduate/loans,time:2023-07-10 11:07:46
+title:University of Houston: Federal Graduate PLUS Loans - University of Houston,url:https://uh.edu/financial/graduate/loans/Grad-PLUS,time:2023-07-10 11:07:55
+title:Refunds FAQ - University of Houston,url:https://www.uh.edu/financial/payment/refunds-faq,time:2023-07-10 11:08:25
+title:University of Houston: SBS Forms - University of Houston,url:https://www.uh.edu/financial/payment/forms,time:2023-07-10 11:08:34
+title:University of Houston : Methods Of Payment - University of Houston,url:https://www.uh.edu/financial/payment/method-payment,time:2023-07-10 11:08:38
+title:Foreign Currency Transactions - University of Houston,url:https://uh.edu/financial/payment/method-payment/wire-transfer,time:2023-07-10 11:08:42
+title:Tuition and Fees Exemptions and Waiver Information - University of Houston,url:https://www.uh.edu/financial/payment/Fee-Waivers,time:2023-07-10 11:08:47
+title:University of Houston: Tax Information - University of Houston,url:https://www.uh.edu/financial/payment/taxes,time:2023-07-10 11:08:55
+title:iGrad - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/igrad,time:2023-07-10 11:09:10
+title:Graduate Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/required-fees,time:2023-07-10 11:09:23
+title:Graduate Tuition - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/tuition,time:2023-07-10 11:09:27
+title:CLASS Graduate Tuition and Fees by Program/Major - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/tuition/Class-grad-2014-tuition/index.php#4,time:2023-07-10 11:09:31
+title:Hobby School of Public Affairs Degrees - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/tuition/folder-with-index/index.php#1,time:2023-07-10 11:09:35
+title:College of the Arts Graduate Degrees by Program - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/tuition/Arts-grad-tuiton-programs/index.php#2,time:2023-07-10 11:09:39
+title:Graduate College Fees - Fiscal Year 2024 - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/college-fees,time:2023-07-10 11:10:12
+title:Graduate Course Fees - University of Houston,url:https://uh.edu/financial/graduate/tuition-fees/course-fees,time:2023-07-10 11:10:16
+title:Student Resources - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/student-resources,time:2023-07-10 11:10:26
+title:Financial Literacy Month - University of Houston,url:https://uh.edu/financial/undergraduate/financial-literacy/financial-literacy-month,time:2023-07-10 11:10:41
+title:TEACH Grant - University of Houston,url:http://www.uh.edu/financial/undergraduate/types-aid/grants/teach-grant,time:2023-07-10 11:10:54
+title:University of Houston : Special Circumstances - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/special-circumstances,time:2023-07-10 11:11:23
+title:Verification of Information - University of Houston,url:https://uh.edu/financial/undergraduate/how-apply/verification,time:2023-07-10 11:13:48
