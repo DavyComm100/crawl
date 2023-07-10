@@ -129,6 +129,7 @@ def crawl(siteid, url):
                 title = doc.title()
                 content = doc.summary()            
                 if content == '<html><body></body></html>':
+                    dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR: Empty Body"})
                     continue
                 if title not in titles:
                     name_windows = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
