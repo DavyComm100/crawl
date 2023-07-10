@@ -100,30 +100,34 @@ def crawl(siteid, url):
     seen = {url}
     titles = []
     dataTosave = []
+
+    #create dir to store html files
+    if not os.path.exists("htmlResult"):
+        os.makedirs("htmlResult")
+    if not os.path.exists("htmlResult/"+ str(siteid)):
+        os.makedirs("htmlResult/"+ str(siteid))
+    dirname = "htmlResult/"+ str(siteid)+ "/" + base_address.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
+    if os.path.exists(dirname):
+        shutil.rmtree(dirname)
+    os.mkdir(dirname)   
     # While the queue is not empty, continue crawling
     while queue:
         try:
             # Get the next URL from the queue
             url = queue.pop()
             # 请求Url
-            r = session.get(url,headers=HEADERS)      
-            # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
-            r.html.render(scrolldown=3, sleep=1, timeout=300)
+            r = session.get(url,headers=HEADERS)
+            if 'text/html' not in r.headers['Content-Type']:
+                continue
             if r.status_code != 200:
                 dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(r.status_code) })
             else:
+                # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
+                r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
                 doc = Document(response.html)
                 title = doc.title()
-                content = doc.summary()
-                if not os.path.exists("htmlResult"):
-                    os.makedirs("htmlResult")
-                if not os.path.exists("htmlResult/"+ str(siteid)):
-                    os.makedirs("htmlResult/"+ str(siteid))
-                dirname = "htmlResult/"+ str(siteid)+ "/" + base_address.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
-                if os.path.exists(dirname):
-                    shutil.rmtree(dirname)
-                os.mkdir(dirname)               
+                content = doc.summary()            
 
                 if title not in titles:
                     name_windows = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
