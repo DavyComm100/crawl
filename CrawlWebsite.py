@@ -114,7 +114,9 @@ def crawl(siteid, url):
                 os.makedirs("htmlResult/"+ str(siteid))
 
             if title not in titles:
+                title = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
                 filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
+
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)
             
