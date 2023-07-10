@@ -35,7 +35,7 @@ def get_hyperlinks(r):
         return []
 
 # Function to get the hyperlinks from a URL that are within the same domain
-def get_domain_hyperlinks(base_address, domain, r):
+def get_domain_hyperlinks(base_address, domain, r, url):
     clean_links = []
     pattern = re.compile(r'.*{}.*'.format(re.escape(base_address)))
     pathPattern = r"^[a-zA-Z]|^\.\./"
@@ -137,7 +137,7 @@ def crawl(siteid, url):
                     titles.append(title)
 
                 # Get the hyperlinks from the URL and add them to the queue
-                for link in get_domain_hyperlinks(base_address,domain, response):
+                for link in get_domain_hyperlinks(base_address,domain, response, url):
                     if link not in seen:
                         queue.append(link)
                         seen.add(link)
