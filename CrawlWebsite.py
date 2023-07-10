@@ -6,6 +6,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse
 from readability import Document
 import os
+import shutil
 import json
 import urllib.parse
 import time
@@ -102,7 +103,7 @@ def crawl(siteid, url):
     # While the queue is not empty, continue crawling
     while queue:
         try:
-        # Get the next URL from the queue
+            # Get the next URL from the queue
             url = queue.pop()
             # 请求Url
             r = session.get(url,headers=HEADERS)      
@@ -119,10 +120,14 @@ def crawl(siteid, url):
                     os.makedirs("htmlResult")
                 if not os.path.exists("htmlResult/"+ str(siteid)):
                     os.makedirs("htmlResult/"+ str(siteid))
+                dirname = "htmlResult/"+ str(siteid)+ "/" + base_address.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
+                if os.path.exists(dirname):
+                    shutil.rmtree(dirname)
+                os.mkdir(dirname)               
 
                 if title not in titles:
-                    title = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
-                    filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
+                    name_windows = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
+                    filename = os.path.join(dirname, f"{name_windows}.html")
 
                     with open(filename, 'w', encoding='utf-8') as f:
                         f.write(content)
