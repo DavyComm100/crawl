@@ -130,7 +130,7 @@ def crawl(siteid, url):
                     queue.append(link)
                     seen.add(link)
         except Exception as ex:
-            dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR" })                
+            dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(ex) })                
              #print(f"url get failed: {url}")
 
     # Serializing json

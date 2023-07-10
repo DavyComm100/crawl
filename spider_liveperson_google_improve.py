@@ -99,16 +99,17 @@ def crawl():
                         print(f"url get failed: {link}")
                         df_init['Name'].append(name)            
                         df_init['Website'].append(link)
-                        df_init['LivePerson'].append('ERROR')
+                        df_init['LivePerson'].append('ERROR:' + str(ex))
             else:
                 print('no match')
                 df_init['Name'].append(name)
                 df_init['LivePerson'].append('')
                 df_init['Website'].append('')
-        except:
+        except Exception as e:
+            print(f"url get failed: {url}")
             df_init['Name'].append(name)
-            df_init['LivePerson'].append('ERROR')
-            df_init['Website'].append('')
+            df_init['LivePerson'].append('ERROR:' + str(e))
+            df_init['Website'].append(url)
         count = count +1
         if count == 100:
             count = 0
