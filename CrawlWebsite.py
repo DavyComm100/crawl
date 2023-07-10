@@ -28,8 +28,7 @@ def get_websitecontent(url):
         if his.status_code == 302:
             link = his.headers["Location"]                
             r = session.get(link,headers=HEADERS, timeout=15)        
-    # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
-    r.html.render(scrolldown=6, sleep=1, timeout=30)
+    r.html.render()
     return r.html
 
 # Function to get the hyperlinks from a URL
