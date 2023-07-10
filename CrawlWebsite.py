@@ -12,29 +12,18 @@ import time
 import requests_html
 
 HTTP_URL_PATTERN = r'^http[s]*://.+'
-
-def get_websitecontent(url):
-    # 自动生成一个useragent
-    user_agent = requests_html.user_agent()
-    # 创建session对象
-    session = requests_html.HTMLSession()
-    HEADERS = {
+# 自动生成一个useragent
+user_agent = requests_html.user_agent()
+# 创建session对象
+session = requests_html.HTMLSession()
+HEADERS = {
         "User-Agent":user_agent
     }
-    # 请求Url
-    r = session.get(url,headers=HEADERS, timeout=15)
-    if len(r.history) > 0:
-        his = r.history[len(r.history)-1]
-        if his.status_code == 302:
-            link = his.headers["Location"]                
-            r = session.get(link,headers=HEADERS, timeout=15)        
-    r.html.render()
-    return r.html
+debug_urls = []
 
 # Function to get the hyperlinks from a URL
 def get_hyperlinks(r):
     try:       
-        #r = get_websitecontent(url)
         urls = []
         items = r.find("a")
         for link in items:
@@ -62,11 +51,13 @@ def get_domain_hyperlinks(base_address, domain, r):
             # Parse the URL and check if the domain is the same
             if re.match(pattern,link):
                 clean_link = link
-                print(link)
+                #print(link)
+                debug_urls.append(link)
 
         # If the link is not a URL, check if it is a relative link
         else:
-            print(link)
+            #print(link)
+            debug_urls.append(link)
             if link.startswith("/"):
                 link = link[1:]
                 link = "https://" + domain + "/" + link
@@ -102,43 +93,55 @@ def crawl(siteid, url):
         try:
         # Get the next URL from the queue
             url = queue.pop()
-            response = get_websitecontent(url)
-            doc = Document(response.html)
-            title = doc.title()
-            content = doc.summary()
-            if not os.path.exists("htmlResult"):
-                os.makedirs("htmlResult")
-            if not os.path.exists("htmlResult/"+ str(siteid)):
-                os.makedirs("htmlResult/"+ str(siteid))
+            # 请求Url
+            r = session.get(url,headers=HEADERS)      
+            # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
+            r.html.render(scrolldown=3, sleep=1, timeout=300)
+            if r.status_code != 200:
+                dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(r.status_code) })
+            else:
+                response = r.html
+                doc = Document(response.html)
+                title = doc.title()
+                content = doc.summary()
+                if not os.path.exists("htmlResult"):
+                    os.makedirs("htmlResult")
+                if not os.path.exists("htmlResult/"+ str(siteid)):
+                    os.makedirs("htmlResult/"+ str(siteid))
 
-            if title not in titles:
-                title = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
-                filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
+                if title not in titles:
+                    title = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
+                    filename = os.path.join("htmlResult/"+ str(siteid), f"{title}.html")
 
-                with open(filename, 'w', encoding='utf-8') as f:
-                    f.write(content)
-            
-                print(f"title:{title},url:{url},time:{time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())}")
-                dataTosave.append({"title": title, "url":url, "content": content })                
-                titles.append(title)
+                    with open(filename, 'w', encoding='utf-8') as f:
+                        f.write(content)
+                
+                    print(f"title:{title},url:{url},time:{time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())}")
+                    dataTosave.append({"title": title, "url":url, "content": content })                
+                    titles.append(title)
 
-            # Get the hyperlinks from the URL and add them to the queue
-            for link in get_domain_hyperlinks(base_address,domain, response):
-                if link not in seen:
-                    queue.append(link)
-                    seen.add(link)
+                # Get the hyperlinks from the URL and add them to the queue
+                for link in get_domain_hyperlinks(base_address,domain, response):
+                    if link not in seen:
+                        queue.append(link)
+                        seen.add(link)
         except Exception as ex:
             dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(ex) })                
-             #print(f"url get failed: {url}")
+            print(f"url get failed: {url}")
 
     # Serializing json
     json_object = json.dumps(dataTosave, indent=4)
     
     # Writing to json file and upload to S3
-    filename = str(siteid) + "_" + url.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '') + ".json"
+    filename = str(siteid) + "_" + base_address.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '') + ".json"
     with open(filename, "w") as outfile:
         outfile.write(json_object)
-    return url
+    
+    filename_debug_urls = str(siteid) + "_" + base_address.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '') + "_debug_urls.json"
+    json_object = json.dumps(debug_urls)
+    with open(filename_debug_urls, "w") as outfile:
+        outfile.write(json_object)
+    return len(dataTosave)
 
 
 crawl(10000, "https://uh.edu/financial/")
