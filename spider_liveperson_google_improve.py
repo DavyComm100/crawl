@@ -96,7 +96,7 @@ def crawl():
                         else:
                             df_init['LivePerson'].append('')
                     except Exception as ex:
-                        print(f"url get failed: {link}")
+                        print(f"url get failed: {link}, {str(ex)}")
                         df_init['Name'].append(name)            
                         df_init['Website'].append(link)
                         df_init['LivePerson'].append('ERROR:' + str(ex))
@@ -106,7 +106,7 @@ def crawl():
                 df_init['LivePerson'].append('')
                 df_init['Website'].append('')
         except Exception as e:
-            print(f"url get failed: {url}")
+            print(f"url get failed: {url}, {str(e)}")
             df_init['Name'].append(name)
             df_init['LivePerson'].append('ERROR:' + str(e))
             df_init['Website'].append(url)
