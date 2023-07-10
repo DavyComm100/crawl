@@ -128,7 +128,8 @@ def crawl(siteid, url):
                 doc = Document(response.html)
                 title = doc.title()
                 content = doc.summary()            
-
+                if content == '<html><body></body></html>':
+                    continue
                 if title not in titles:
                     name_windows = title.replace("?", "_").replace("*", "").replace(":", "").replace("/", "_").replace('"', '').replace('<', '').replace('>', '').replace('|', '')
                     filename = os.path.join(dirname, f"{name_windows}.html")
