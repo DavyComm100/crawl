@@ -53,26 +53,25 @@ def get_domain_hyperlinks(base_address, domain, r):
         clean_link = None
         if link == None:
             continue
-        print(link)
+        if link.endswith(".pdf"):
+            continue
+        if link.startswith("#") or link.startswith("mailto:") or link.startswith("tel:"):
+            continue
         # If the link is a URL, check if it is within the same domain
         if re.search(HTTP_URL_PATTERN, link):
             # Parse the URL and check if the domain is the same
             if re.match(pattern,link):
                 clean_link = link
-                if clean_link.endswith(".pdf"):
-                    continue
+                print(link)
 
         # If the link is not a URL, check if it is a relative link
         else:
+            print(link)
             if link.startswith("/"):
                 link = link[1:]
                 link = "https://" + domain + "/" + link
                 if re.match(pattern,link):
                     clean_link = link
-            elif link.startswith("#") or link.startswith("mailto:") or link.startswith("tel:"):
-                continue
-            elif link.endswith(".pdf"):
-                continue
           
         if clean_link is not None:
             if clean_link.endswith("/"):
