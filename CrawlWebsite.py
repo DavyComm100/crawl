@@ -37,6 +37,7 @@ def get_hyperlinks(r):
 def get_domain_hyperlinks(base_address, domain, r):
     clean_links = []
     pattern = re.compile(r'.*{}.*'.format(re.escape(base_address)))
+    pathPattern = r"^[a-zA-Z]|^\.\./"
     links = set(get_hyperlinks(r))
     for link in links:
         clean_link = None
@@ -61,6 +62,16 @@ def get_domain_hyperlinks(base_address, domain, r):
             if link.startswith("/"):
                 link = link[1:]
                 link = "https://" + domain + "/" + link
+                if re.match(pattern,link):
+                    clean_link = link
+            elif link.startswith("//"):
+                link = "https:" + link
+                if re.match(pattern,link):
+                    clean_link = link
+            elif re.search(pathPattern, link):
+                if not url.endswith("/"):
+                    url = url + "/"
+                link = urllib.parse.urljoin(url,link)
                 if re.match(pattern,link):
                     clean_link = link
           
