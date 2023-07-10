@@ -28,10 +28,14 @@ HEADERS = {
 #4. get list university in US from wiki page: https://en.wikipedia.org/wiki/List_of_universities_in_Canada  
 def get_websitecontent(url):
     # 请求Url
-    r = session.get(url,headers=HEADERS)    
+    r = session.get(url,headers=HEADERS)
+    if 'text/html' not in r.headers['Content-Type']:
+        return ''
+    if r.status_code != 200:
+        return ''
     # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
     r.html.render(scrolldown=3, sleep=1, timeout=300)
-    return r.html
+    return r.html.html
 
 def crawl():
     df_init= {'Name':[], 'LivePerson':[], 'Website':[]}
@@ -50,7 +54,7 @@ def crawl():
         try:
             webpage = get_websitecontent(url)
             #soup = BeautifulSoup(webpage, "html.parser")
-            dom = etree.HTML(webpage.html)
+            dom = etree.HTML(webpage)
 
             searchData = dom.xpath('//div[@id="main"]//div[contains(@class, "fP1Qef")]//a')
             if len(searchData) >0 :
@@ -84,7 +88,7 @@ def crawl():
                         df_init['Name'].append(name)            
                         df_init['Website'].append(link)
                         
-                        if 'liveperson.net' in webpagecontent.html or 'liveperson' in webpagecontent.html or 'liveper.sn' in webpagecontent.html:
+                        if 'liveperson.net' in webpagecontent or 'liveperson' in webpagecontent or 'liveper.sn' in webpagecontent:
                             print('Yes')
                             df_init['LivePerson'].append('Yes')
                         else:
