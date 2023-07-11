@@ -15,18 +15,19 @@ import urllib.parse
 
 ssl._create_default_https_context = ssl._create_unverified_context
 HTTP_URL_PATTERN = r'^http[s]*://.+'
-# 自动生成一个useragent
-user_agent = requests_html.user_agent()
-# 创建session对象
-session = requests_html.HTMLSession()
-HEADERS = {
-        "User-Agent":user_agent
-    }
+
 #1. get list university in Canada from wiki page: https://en.wikipedia.org/wiki/List_of_universities_in_Canada
 #2. call google search to find qless with university name: https://www.google.com.hk/search?q=Acadia+University+qless
 #3. forcus the first result, if the url or the description contains qless then retun true
 #4. get list university in US from wiki page: https://en.wikipedia.org/wiki/List_of_universities_in_Canada  
 def get_websitecontent(url):
+    # 自动生成一个useragent
+    user_agent = requests_html.user_agent()
+    # 创建session对象
+    session = requests_html.HTMLSession()
+    HEADERS = {
+            "User-Agent":user_agent
+        }
     # 请求Url
     r = session.get(url,headers=HEADERS)
     if 'text/html' not in r.headers['Content-Type']:
@@ -129,7 +130,6 @@ def crawl():
     filename = 'CAGoogle.csv'
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
-
 def extract_xls(data_path):
     workbook = xlrd.open_workbook(data_path)
     table = workbook.sheets()[0]
