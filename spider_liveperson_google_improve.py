@@ -33,15 +33,17 @@ def get_websitecontent(url):
     if 'text/html' not in r.headers['Content-Type']:
         return ''
     if r.status_code != 200:
+        print(f"{str(r.status_code)}: {url}")
         return ''
     # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
-    r.html.render(scrolldown=3, sleep=1, timeout=300)
+    r.html.render(scrolldown=5, sleep=1, timeout=300)
     return r.html.html
 
 def crawl():
     df_init= {'Name':[], 'LivePerson':[], 'Website':[]}
     googleUrl = "https://www.google.com/search?hl=en&q="
-    print(os.getcwd())
+    if not os.path.exists("liveperson"):
+        os.makedirs("liveperson")
     names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
     #names = ["godaddy"]
     print(len(names))
@@ -121,13 +123,15 @@ def crawl():
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
-            filename = 'CAGoogle'+str(index)+'.csv'
+            #filename = 'CAGoogle'+str(index)+'.csv'
+            filename = os.path.join("liveperson",'CAGoogle'+str(index)+'.csv')
             df.to_csv(filename, index=False, encoding="utf-8-sig")
             time.sleep(3)
 
     print(len(df_init['Name']))
-    df = pd.DataFrame(df_init)
-    filename = 'CAGoogle.csv'
+    df = pd.DataFrame(df_init)    
+    #filename = 'CAGoogle.csv'
+    filename = os.path.join("liveperson", 'CAGoogle.csv')
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
 def extract_xls(data_path):
