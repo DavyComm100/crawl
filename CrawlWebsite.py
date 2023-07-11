@@ -1,5 +1,6 @@
 
 import re
+import ssl
 import urllib.request
 from collections import deque
 from html.parser import HTMLParser
@@ -11,8 +12,13 @@ import json
 import urllib.parse
 import time
 import requests_html
+from lxml.html import tostring
+import lxml.html
 
+re._pattern_type = re.Pattern
+ssl._create_default_https_context = ssl._create_unverified_context
 HTTP_URL_PATTERN = r'^http[s]*://.+'
+utf8_parser = lxml.html.HTMLParser(encoding="utf-8")
 # 自动生成一个useragent
 user_agent = requests_html.user_agent()
 # 创建session对象
@@ -21,6 +27,19 @@ HEADERS = {
         "User-Agent":user_agent
     }
 debug_urls = []
+
+def clean_html(input):
+    doc = lxml.html.document_fromstring(
+        input.encode("utf-8", "replace"), parser=utf8_parser
+    )
+    #doc = html_cleaner.clean_html(doc)
+
+    for elem in doc.findall(".//*"):
+        if elem.tag in ["system-region", "noscript", "script", "iframe", "footer"]:            
+            elem.drop_tree()
+        elif 'style' in elem.attrib and ('display: none' in elem.attrib['style'] or 'display:none' in elem.attrib['style']) :
+            elem.drop_tree()
+    return tostring(doc)
 
 # Function to get the hyperlinks from a URL
 def get_hyperlinks(r):
@@ -125,10 +144,11 @@ def crawl(siteid, url):
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                 r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
-                doc = Document(response.html)
+                doc = Document(clean_html(response.html))
                 title = doc.title()
-                content = doc.summary()            
-                if content == '<html><body></body></html>':
+                content = doc.summary(True)
+                content = re.sub(r'\n+\s+', '\n', content.replace('\t', ''))            
+                if content == '' or content == '<div></div>':
                     dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR: Empty Body"})
                     continue
                 if title not in titles:
@@ -140,7 +160,8 @@ def crawl(siteid, url):
                 
                     print(f"title:{title},url:{url},time:{time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())}")
                     dataTosave.append({"title": title, "url":url, "content": content })                
-                    titles.append(title)
+                    if title != "" and title != "[no-title]":
+                        titles.append(title)
 
                 # Get the hyperlinks from the URL and add them to the queue
                 for link in get_domain_hyperlinks(base_address,domain, response, url):
