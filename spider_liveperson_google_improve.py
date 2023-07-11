@@ -53,56 +53,62 @@ def crawl():
         #url = googleUrl + urllib.parse.urlencode(name + ' live chat')
         try:
             webpage = get_websitecontent(url)
+            if webpage != "":
             #soup = BeautifulSoup(webpage, "html.parser")
-            dom = etree.HTML(webpage)
+                dom = etree.HTML(webpage)
 
-            searchData = dom.xpath('//div[@id="main"]//div[contains(@class, "fP1Qef")]//a')
-            if len(searchData) >0 :
-                link = ""
-                for aLink in searchData:
-                    link = aLink.attrib["href"]
-                    if re.search(HTTP_URL_PATTERN, link) and not link.startswith('https://www.google.com'):
-                        break  
-                # Parse the URL and check if the domain is the same
-                    if link.startswith("/"):
-                        parse_url = urlparse(link)
-                        urlPara = parse_qs(parse_url.query).get('url')
-                        qPara = parse_qs(parse_url.query).get('q')
-                        if urlPara != None:
-                            link = urlPara[0]
-                        if qPara != None:
-                            link = qPara[0]
-                        break 
-                print(link)
-                if link.startswith('https://free-apply.com'):
+                searchData = dom.xpath('//div[@id="main"]//div[contains(@class, "fP1Qef")]//a')
+                if len(searchData) >0 :
+                    link = ""
+                    for aLink in searchData:
+                        link = aLink.attrib["href"]
+                        if re.search(HTTP_URL_PATTERN, link) and not link.startswith('https://www.google.com'):
+                            break  
+                    # Parse the URL and check if the domain is the same
+                        if link.startswith("/"):
+                            parse_url = urlparse(link)
+                            urlPara = parse_qs(parse_url.query).get('url')
+                            qPara = parse_qs(parse_url.query).get('q')
+                            if urlPara != None:
+                                link = urlPara[0]
+                            if qPara != None:
+                                link = qPara[0]
+                            break 
+                    print(link)
+                    if link.startswith('https://free-apply.com'):
+                        print('no match')
+                        df_init['Name'].append(name)
+                        df_init['LivePerson'].append('')
+                        df_init['Website'].append('')
+                    else:
+                        #df_init['Name'].append(name)
+                        #df_init['Website'].append(link)
+                        try:                                              
+                            webpagecontent = get_websitecontent(link)        
+                            #print(link)
+                            df_init['Name'].append(name)            
+                            df_init['Website'].append(link)
+                            
+                            if 'liveperson.net' in webpagecontent or 'liveperson' in webpagecontent or 'liveper.sn' in webpagecontent:
+                                print('Yes')
+                                df_init['LivePerson'].append('Yes')
+                            else:
+                                print('No')
+                                df_init['LivePerson'].append('')
+                        except Exception as ex:
+                            print(f"url get failed: {link}, {str(ex)}")
+                            df_init['Name'].append(name)            
+                            df_init['Website'].append(link)
+                            df_init['LivePerson'].append('ERROR:' + str(ex))
+                else:
                     print('no match')
                     df_init['Name'].append(name)
                     df_init['LivePerson'].append('')
                     df_init['Website'].append('')
-                else:
-                    #df_init['Name'].append(name)
-                    #df_init['Website'].append(link)
-                    try:                                              
-                        webpagecontent = get_websitecontent(link)        
-                        #print(link)
-                        df_init['Name'].append(name)            
-                        df_init['Website'].append(link)
-                        
-                        if 'liveperson.net' in webpagecontent or 'liveperson' in webpagecontent or 'liveper.sn' in webpagecontent:
-                            print('Yes')
-                            df_init['LivePerson'].append('Yes')
-                        else:
-                            df_init['LivePerson'].append('')
-                    except Exception as ex:
-                        print(f"url get failed: {link}, {str(ex)}")
-                        df_init['Name'].append(name)            
-                        df_init['Website'].append(link)
-                        df_init['LivePerson'].append('ERROR:' + str(ex))
             else:
-                print('no match')
                 df_init['Name'].append(name)
-                df_init['LivePerson'].append('')
-                df_init['Website'].append('')
+                df_init['LivePerson'].append('ERROR')
+                df_init['Website'].append(url)
         except Exception as e:
             print(f"url get failed: {url}, {str(e)}")
             df_init['Name'].append(name)
