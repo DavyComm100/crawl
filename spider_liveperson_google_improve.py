@@ -6,14 +6,12 @@ import requests_html
 from bs4 import BeautifulSoup
 from lxml import etree
 import pandas as pd
-import ssl
 import re
 import time
 from urllib.parse import urlparse
 from urllib.parse import parse_qs
 import urllib.parse
 
-ssl._create_default_https_context = ssl._create_unverified_context
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 
 #1. get list university in Canada from wiki page: https://en.wikipedia.org/wiki/List_of_universities_in_Canada

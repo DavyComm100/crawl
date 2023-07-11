@@ -1,6 +1,5 @@
 
 import re
-import ssl
 import urllib.request
 from collections import deque
 from html.parser import HTMLParser
@@ -16,7 +15,6 @@ from lxml.html import tostring
 import lxml.html
 
 re._pattern_type = re.Pattern
-ssl._create_default_https_context = ssl._create_unverified_context
 HTTP_URL_PATTERN = r'^http[s]*://.+'
 utf8_parser = lxml.html.HTMLParser(encoding="utf-8")
 # 自动生成一个useragent

@@ -1,5 +1,5 @@
 1. 后台运行：nohup python3 CrawlWebsite.py > spider_log.txt &
-1. 后台运行：nohup python3 spider_liveperson_google_improve.py > liveperson_log.txt &
+1. 后台运行：nohup python3 spider_liveperson_google_improve.py > spider_log.txt &
    (1). ps aux | grep python
    (2). kill -9 -主进程号 举例：kill -9 -1265
 查看output
