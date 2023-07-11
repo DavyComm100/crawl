@@ -139,6 +139,7 @@ def crawl(siteid, url):
             if 'text/html' not in r.headers['Content-Type']:
                 continue
             if r.status_code != 200:
+                print(f"url get failed: {url} ,ERROR: {str(r.status_code)}")
                 dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(r.status_code) })
             else:
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
