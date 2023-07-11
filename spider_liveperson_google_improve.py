@@ -34,7 +34,7 @@ def get_websitecontent(url):
         print(f"{str(r.status_code)}: {url}")
         return ''
     # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
-    r.html.render(scrolldown=3, sleep=1, timeout=150)
+    r.html.render(scrolldown=3, sleep=1, timeout=300)
     return r.html.html
 
 def crawl():
@@ -49,7 +49,7 @@ def crawl():
     index=0
     for name in names:
         param = urllib.parse.quote_plus(name + ' live chat')
-        time.sleep(2)
+        #time.sleep(2)
         url = googleUrl + param
         #url = googleUrl + urllib.parse.urlencode(name + ' live chat')
         try:
