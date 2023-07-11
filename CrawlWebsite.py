@@ -19,8 +19,6 @@ HTTP_URL_PATTERN = r'^http[s]*://.+'
 utf8_parser = lxml.html.HTMLParser(encoding="utf-8")
 # 自动生成一个useragent
 user_agent = requests_html.user_agent()
-# 创建session对象
-session = requests_html.HTMLSession()
 HEADERS = {
         "User-Agent":user_agent
     }
@@ -61,9 +59,11 @@ def get_domain_hyperlinks(base_address, domain, r, url):
         clean_link = None
         if link == None:
             continue
-        if link.endswith(".pdf"):
+        if link == "":
             continue
-        if link.startswith("#") or link.startswith("mailto:") or link.startswith("tel:"):
+        if link.lower().endswith(".pdf"):
+            continue
+        if link.startswith("#") or link.lower().startswith("mailto:") or link.lower().startswith("tel:") or link.lower().startswith("javascript:"):
             continue
         # If the link is a URL, check if it is within the same domain
         if re.search(HTTP_URL_PATTERN, link):
@@ -132,6 +132,8 @@ def crawl(siteid, url):
         try:
             # Get the next URL from the queue
             url = queue.pop()
+            # 创建session对象
+            session = requests_html.HTMLSession()
             # 请求Url
             r = session.get(url,headers=HEADERS)
             if 'text/html' not in r.headers['Content-Type']:
