@@ -1,0 +1,27 @@
+<div><div class="h03-article-text-plank text parbase aem-GridColumn aem-GridColumn--default--12">
+<p>Symlinks (symbolische Verknüpfungen) sind Dateiformate, die als Verweis auf eine andere Datei oder ein anderes Verzeichnis in einem Dateisystem dienen. Wenn Sie einen Symlink erstellen, verweist dieser auf den Speicherort der Zieldatei oder des Zielverzeichnisses und erstellt so tatsächlich eine Verknüpfung dazu. </p>
+<p>Sehen Sie sich unten im Abschnitt für Ihr Betriebssystem nach, um zu sehen, ob Dropbox die Synchronisierung von Symlinks zulässt.</p>
+<h2>Symlinks unter macOS und Linux</h2>
+<p>Auf Computern mit macOS oder Linux kann der Pfad der Datei oder des Ordners, auf den der Symlink verweist, mit Dropbox synchronisiert werden.</p>
+<p><b>Hinweis:</b> Wenn Sie die Originaldatei oder den Originalordner an einen anderen Speicherort in Ihrem Dropbox-Konto verschieben, verweist der Symlink weiterhin auf den ursprünglichen Speicherort und funktioniert möglicherweise nicht mehr wie vorgesehen. Wenn Sie die Originaldatei oder den Originalordner löschen, funktioniert der Symlink überhaupt nicht mehr.</p>
+<h2>Verbindungen (Junctions) und Symlinks unter Windows</h2>
+<p>Auf Computern mit Windows sind zwei Arten von Referenzverknüpfungen möglich:</p>
+<ul>
+<li>Verbindungen (Junctions), die nur auf Ordner verweisen</li>
+<li>Symbolische Links, für deren Erstellung besondere Berechtigungen erforderlich sind</li>
+</ul>
+<p>Die Dropbox-Desktop-App unterstützt die Synchronisierung dieser beiden Elemente nicht.</p>
+<p>An jedem solchen Verbindungspunkt oder Symlink wird ein rotes X-Symbol angezeigt, das darauf hinweist, dass das Element nicht synchronisiert wird.</p>
+<p><a href="https://help.dropbox.com/de-de/sync/sync-icons" target="_blank">Erfahren Sie mehr über Synchronisierungssymbole.</a></p>
+<h2>Häufig gestellte Fragen zu Symlinks in Dropbox</h2>
+<p><b>Funktionieren Aliasdateien, Verknüpfungen und Symlinks in Dropbox?</b></p>
+<p>Es gibt verschiedene Arten von Referenzverknüpfungen mit etwas unterschiedlichen Funktionen. Abhängig von Ihrem Betriebssystem und der Art und Weise, wie es auf eine Datei oder ein Verzeichnis verweist, können sie auch als Verbindungen (Junctions) oder Netzwerkordner bezeichnet werden. </p>
+<p>Aliasdateien (Mac) und Verknüpfungen (Windows) sind wie Label, die auf eine Datei verweisen. Symlinks sind dagegen wie Klone der Datei, die sich in den meisten Fällen so verhalten, als wären sie das Original. Aus diesem Grund werden auf Dropbox geteilte Aliasdateien und Verknüpfungen möglicherweise auf Geräten mit nicht übereinstimmenden Pfaden nicht geöffnet.</p>
+<p><b>Warum trägt mein Ordner die Beschriftung „Symlink-Sicherungskopie“?</b></p>
+<p>Alle Elemente, die vor Mitte 2019 über einen außerhalb Ihres Dropbox-Ordners verknüpften Symlink mit Ihrem Dropbox-Konto synchronisiert wurden, sind in einer Ordnerkopie abgelegt, die den Zusatz (<b>[Ordnername] (Symlink-Sicherungskopie)</b>) trägt. Alle Änderungen an Inhalten am ursprünglichen Speicherort, auf den der Symlink verwiesen hat, werden nicht mehr mit Ihrem Dropbox-Konto synchronisiert. Wenn Sie das ursprüngliche Element nach wie vor synchronisieren möchten, müssen Sie dieses statt des Symlinks zu Ihrem Dropbox-Konto hinzufügen.</p>
+<p>Dieser Ordner ist in Ihren Einstellungen für die <a href="https://help.dropbox.com/de-de/sync/selective-sync-overview" target="_blank">selektive Synchronisierung</a> standardmäßig deaktiviert.</p>
+<p><b>Warum habe ich einen Ordner mit der Bezeichnung „Freigegebene Symlink-Sicherungskopien“?</b></p>
+<p>Alle Elemente, die vor Mitte 2019 über einen Symlink in einem freigegebenen Ordner, der auf eine Stelle außerhalb eines freigegebenen Dropbox-Ordners verwies, mit Ihrem Dropbox-Konto synchronisiert wurden, befinden sich jetzt in einem neuen Ordner mit der Bezeichnung „<b>Freigegebene Symlink-Sicherungskopien</b>“. Alle Änderungen an Inhalten am ursprünglichen Speicherort, auf den der Symlink verwiesen hat, werden nicht mehr mit Ihrem Dropbox-Konto synchronisiert.</p>
+<p>Nutzer mit Zugriff auf den freigegebenen Ordner haben möglicherweise keinen Zugriff mehr auf die Inhalte, auf die diese Symlinks verweisen, sondern sehen nur die Symlink-Datei. Wenn diese Nutzer sowohl auf den Symlink als auch auf die Elemente Zugriff haben sollen, auf die dieser verweist, müssen Sie die entsprechenden Elemente in den freigegebenen Ordner verschieben.</p>
+</div>
+</div>

@@ -1,93 +1,412 @@
-title:Dropbox Help Center - How to use Dropbox - Dropbox Help,url:https://help.dropbox.com/,time:2023-07-11 12:32:39
-title:Security - Dropbox Help,url:https://help.dropbox.com/security,time:2023-07-11 12:32:46
-title:Dropbox and FDA 21 CFR Part 11-an overview - Dropbox Help,url:https://help.dropbox.com/security/fda-21-cfr-part-11,time:2023-07-11 12:32:54
-title:Dropbox y el 21 CFR Parte 11 de la FDA, información general - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/security/fda-21-cfr-part-11,time:2023-07-11 12:32:59
-title:Dropbox y HIPAA/HITECH - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/security/hipaa-hitech-overview,time:2023-07-11 12:33:05
-title:Dropbox dan HIPAA/HITECH - Bantuan Dropbox,url:https://help.dropbox.com/id-id/security/hipaa-hitech-overview,time:2023-07-11 12:33:11
-title:Dropbox Passwords - Bantuan Dropbox,url:https://help.dropbox.com/id-id/passwords,time:2023-07-11 12:33:17
-title:Dropbox Passwords - Справка Dropbox,url:https://help.dropbox.com/ru-ru/passwords,time:2023-07-11 12:33:23
-title:Место в аккаунте - Справка Dropbox,url:https://help.dropbox.com/ru-ru/storage-space,time:2023-07-11 12:33:29
-title:儲存空間 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/storage-space,time:2023-07-11 12:33:35
-title:如何兌換 Dell + Dropbox 促銷方案 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/storage-space/dell-promotion,time:2023-07-11 12:33:41
-title:Das Aktionsangebot von Dell und Dropbox aktivieren - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/storage-space/dell-promotion,time:2023-07-11 12:33:47
-title:25 GB Speicherplatz der Aktion von Pixlr und Dropbox aktivieren - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/storage-space/pixlr,time:2023-07-11 12:33:53
-title:Cómo reclamar la promoción 25 GB de Dropbox y Pixlr - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/storage-space/pixlr,time:2023-07-11 12:33:59
-title:Promociones de espacio de almacenamiento de Dropbox - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/accounts-billing/space-storage/promotion-redeem,time:2023-07-11 12:34:05
-title:How to get more storage space - Dropbox Help,url:https://help.dropbox.com/accounts-billing/space-storage/get-more-space?fallback=true,time:2023-07-11 12:34:12
-title:Wie Sie mehr Speicherplatz erhalten - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/storage-space/get-more-space,time:2023-07-11 12:34:24
-title:Belegen freigegebene Ordner meinen Speicherplatz? - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/storage-space/storage-space,time:2023-07-11 12:34:30
-title:Will shared folders use up my storage space? - Dropbox Help,url:https://help.dropbox.com/storage-space/storage-space?fallback=true,time:2023-07-11 12:34:35
-title:Share a Dropbox file or folder - Dropbox Help,url:https://help.dropbox.com/share/share-with-others,time:2023-07-11 12:34:41
-title:Compartilhar um arquivo ou pasta do Dropbox - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/share/share-with-others,time:2023-07-11 12:34:46
-title:Como compartilhar um arquivo ou pasta do Dropbox por link - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/share/create-and-share-link,time:2023-07-11 12:34:51
-title:Compartir un archivo o una carpeta de Dropbox a través de un vínculo - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/share/create-and-share-link,time:2023-07-11 12:34:57
-title:Administrar Dropbox Transfer para el equipo - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/share/manage-team-transfers,time:2023-07-11 12:35:03
-title:How to manage Dropbox Transfer for your team - Dropbox Help,url:https://help.dropbox.com/share/manage-team-transfers?fallback=true,time:2023-07-11 12:35:09
-title:Change Privacy Settings For A Paper Doc Or Folder - Dropbox Help,url:https://help.dropbox.com/share/sharing-permissions,time:2023-07-11 12:35:15
-title:Mengubah Pengaturan Privasi untuk Dokumen atau Folder Paper - Bantuan Dropbox,url:https://help.dropbox.com/id-id/share/sharing-permissions,time:2023-07-11 12:35:21
-title:Apakah rilis Dropbox Paper 2020 itu - Bantuan Dropbox,url:https://help.dropbox.com/id-id/view-edit/paper-2020-faqs,time:2023-07-11 12:35:28
-title:Dropbox Paper 2020 릴리스는 무엇인가요? - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/view-edit/paper-2020-faqs,time:2023-07-11 12:35:34
-title:시작하기 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/get-started,time:2023-07-11 12:35:39
-title:Kom igång - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/get-started,time:2023-07-11 12:35:45
-title:Synkronisera - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/sync,time:2023-07-11 12:35:51
-title:Hur synkar Dropbox mina filer? - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/sync/sync-overview,time:2023-07-11 12:35:57
-title:Wie synchronisiert Dropbox meine Dateien? - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/sync/sync-overview,time:2023-07-11 12:36:03
-title:Dropbox-Unterstützung für macOS - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/installs/dropbox-for-macos-support,time:2023-07-11 12:36:10
-title:Supporto di Dropbox per macOS - Assistenza Dropbox,url:https://help.dropbox.com/it-it/installs/dropbox-for-macos-support,time:2023-07-11 12:36:16
-title:Organizza - Assistenza Dropbox,url:https://help.dropbox.com/it-it/organize,time:2023-07-11 12:36:22
-title:Come copiare i file nella cartella Dropbox - Assistenza Dropbox,url:https://help.dropbox.com/it-it/organize/files-move-instead-of-copy,time:2023-07-11 12:36:28
-title:Cómo copiar archivos en tu carpeta de Dropbox - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/organize/files-move-instead-of-copy,time:2023-07-11 12:36:35
-title:Usa Dropbox más rápido con métodos abreviados de teclado - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/organize/keyboard-shortcuts,time:2023-07-11 12:36:41
-title:キーボード ショートカットで Dropbox の操作を高速化する - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/organize/keyboard-shortcuts,time:2023-07-11 12:36:47
-title:Dropbox Transfer - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/transfer,time:2023-07-11 12:36:56
-title:Dropbox Transfer - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/transfer,time:2023-07-11 12:37:01
-title:Dropbox Sign - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/sign,time:2023-07-11 12:37:07
-title:Oversigt over siden Underskrifter - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/view-edit/signature-page-overview,time:2023-07-11 12:37:14
-title:签字页面：概述 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/view-edit/signature-page-overview,time:2023-07-11 12:37:20
-title:如何管理签字请求模板 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/create-upload/signature-request-templates,time:2023-07-11 12:37:26
-title:Como gerenciar modelos de solicitação de assinatura - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/create-upload/signature-request-templates,time:2023-07-11 12:37:33
-title:Como enviar uma solicitação de assinatura eletrônica - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/share/send-signature-request,time:2023-07-11 12:37:40
-title:O que é o Dropbox One? - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/plans/dropbox-one,time:2023-07-11 12:37:45
-title:Apa itu Dropbox One? - Bantuan Dropbox,url:https://help.dropbox.com/id-id/plans/dropbox-one,time:2023-07-11 12:37:51
-title:Add-On Alat Kreatif Dropbox - Bantuan Dropbox,url:https://help.dropbox.com/id-id/plans/creative-tools,time:2023-07-11 12:37:58
-title:Dropbox-tillägget Kreativa verktyg - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/plans/creative-tools,time:2023-07-11 12:38:03
-title:Tillägg för Dropbox-datastyrning - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/plans/data-governance,time:2023-07-11 12:38:09
-title:Dropbox' tilleggsprogram for datastyring - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/plans/data-governance,time:2023-07-11 12:38:15
-title:Dropbox Capture - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/capture,time:2023-07-11 12:38:21
-title:Slik bruker du Dropbox Capture - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/create-upload/dropbox-capture,time:2023-07-11 12:38:27
-title:如何使用 Dropbox Capture - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/create-upload/dropbox-capture,time:2023-07-11 12:38:33
-title:如何安装 Dropbox Capture - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/create-upload/install-dropbox-capture#captions,time:2023-07-11 12:38:40
-title:Dropbox Capture installieren - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/create-upload/install-dropbox-capture,time:2023-07-11 12:38:45
-title:Häufig gestellte Fragen zu Dropbox Capture - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/create-upload/dropbox-capture-faq,time:2023-07-11 12:38:52
-title:Soalan Lazim Dropbox Capture - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/create-upload/dropbox-capture-faq,time:2023-07-11 12:38:59
-title:Hapuskan dan pulihkan - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/delete-restore,time:2023-07-11 12:39:04
-title:Hapuskan fail pada komputer yang hilang atau dicuri dari jarak jauh - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/delete-restore/delete-dropbox-device,time:2023-07-11 12:39:10
-title:Remote wipe from a team member's lost or stolen device - Dropbox Help,url:https://help.dropbox.com/teams-admins/admin/remote-wipe?fallback=true,time:2023-07-11 12:39:16
-title:Remote wipe files from a lost or stolen computer - Dropbox Help,url:https://help.dropbox.com/accounts-billing/security/delete-dropbox-device?fallback=true,time:2023-07-11 12:39:23
-title:Exclusão remota de dispositivo perdido ou roubado de um membro da equipe - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/delete-restore/remote-wipe,time:2023-07-11 12:39:29
-title:Como recuperar seus arquivos do Dropbox perdidos - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/delete-restore/missing-reappearing-corrupted-files,time:2023-07-11 12:39:33
-title:Slik gjenoppretter du manglende Dropbox-filer - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/delete-restore/missing-reappearing-corrupted-files,time:2023-07-11 12:39:39
-title:Hvor lagres dataene mine? - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/security/physical-location-data-storage,time:2023-07-11 12:39:45
-title:Où mes données sont-elles stockées ? - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/security/physical-location-data-storage,time:2023-07-11 12:39:50
-title:Installation - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/installs,time:2023-07-11 12:39:56
-title:Puis-je accéder à Dropbox sur mon appareil mobile ? - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/installs/access-dropbox,time:2023-07-11 12:40:01
-title:¿Puedo acceder a Dropbox desde mi dispositivo móvil? - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/installs/access-dropbox,time:2023-07-11 12:40:07
-title:Dropbox Passwords: Cómo instalarlo e iniciar sesión - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/installs/download-dropbox-passwords,time:2023-07-11 12:40:12
-title:Dropbox Passwords: como instalar e acessar sua conta - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/installs/download-dropbox-passwords,time:2023-07-11 12:40:18
-title:Como usar o Dropbox Passwords - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/installs/how-to-use-dropbox-passwords,time:2023-07-11 12:40:23
-title:Alterar os direitos dos administradores da sua equipe do Dropbox - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/security/change-admin-rights#levels,time:2023-07-11 12:40:29
-title:Modificare i diritti da amministratore per il proprio team Dropbox - Assistenza Dropbox,url:https://help.dropbox.com/it-it/security/change-admin-rights,time:2023-07-11 12:40:34
-title:Che cos'è Dropbox Enterprise? - Assistenza Dropbox,url:https://help.dropbox.com/it-it/plans/enterprise,time:2023-07-11 12:40:41
-title:Cos’è Dropbox Standard? - Assistenza Dropbox,url:https://help.dropbox.com/accounts-billing/plans-upgrades/standard-plan,time:2023-07-11 12:40:47
-title:Wat is Dropbox Standard? - Dropbox Help,url:https://help.dropbox.com/nl-nl/plans/standard-plan,time:2023-07-11 12:40:53
-title:Maken en uploaden - Dropbox Help,url:https://help.dropbox.com/nl-nl/create-upload,time:2023-07-11 12:40:58
-title:Opnames bewerken met Dropbox Capture - Dropbox Help,url:https://help.dropbox.com/nl-nl/create-upload/edit-dropbox-capture,time:2023-07-11 12:41:04
-title:如何使用 Dropbox Capture 编辑录制内容 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/create-upload/edit-dropbox-capture,time:2023-07-11 12:41:10
-title:如何使用 Dropbox Capture 共享录制内容 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/create-upload/share-dropbox-capture,time:2023-07-11 12:41:16
-title:Cara membagikan rekaman dengan Dropbox Capture - Bantuan Dropbox,url:https://help.dropbox.com/id-id/create-upload/share-dropbox-capture,time:2023-07-11 12:41:22
-title:Cara mengelola Dropbox Capture untuk tim Anda - Bantuan Dropbox,url:https://help.dropbox.com/id-id/create-upload/manage-team-capture,time:2023-07-11 12:41:27
-title:Zarządzanie Dropbox Capture w zespole - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/create-upload/manage-team-capture,time:2023-07-11 12:41:33
-title:Dropbox Backup - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/backup,time:2023-07-11 12:41:39
-title:Jak zarządzać Dropbox Backup w zespole - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/organize/manage-team-backup,time:2023-07-11 12:41:46
-title:Często zadawane pytania dotyczące Dropbox Passwords - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/installs/dropbox-passwords-faq,time:2023-07-11 12:41:52
-title:Dropbox Passwords 관련 자주 묻는 질문(FAQ) - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/installs/dropbox-passwords-faq,time:2023-07-11 12:41:58
+title:Dropbox Help Center - How to use Dropbox - Dropbox Help,url:https://help.dropbox.com/,time:2023-07-11 13:22:20
+title:Dropbox Capture - Dropbox Help,url:https://help.dropbox.com/capture.html,time:2023-07-11 13:22:27
+title:Dropbox Capture - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/capture,time:2023-07-11 13:22:34
+title:チームの Dropbox Capture を管理する方法 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/create-upload/manage-team-capture,time:2023-07-11 13:22:40
+title:Cara mengurus Dropbox Capture untuk pasukan anda - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/create-upload/manage-team-capture,time:2023-07-11 13:22:46
+title:Tetapan akaun - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/account-settings,time:2023-07-11 13:22:54
+title:Cara mendaftar untuk akses awal kepada ciri-ciri Dropbox Business - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/account-settings/enable-early-access,time:2023-07-11 13:23:00
+title:Cómo registrarte en el acceso anticipado para acceder a las características de Dropbox Business - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/account-settings/enable-early-access,time:2023-07-11 13:23:07
+title:Integraciones - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/integrations,time:2023-07-11 13:23:14
+title:Integraties - Dropbox Help,url:https://help.dropbox.com/nl-nl/integrations,time:2023-07-11 13:23:21
+title:Zoom gebruiken met Dropbox - Dropbox Help,url:https://help.dropbox.com/nl-nl/integrations/zoom,time:2023-07-11 13:23:28
+title:How To Use Zoom With Dropbox - Dropbox Help,url:https://help.dropbox.com/integrations/zoom?fallback=true,time:2023-07-11 13:23:35
+title:Do you offer WebDAV, Email Attachments, or FTP support? - Dropbox Help,url:https://help.dropbox.com/integrations/webdav-or-ftp,time:2023-07-11 13:23:44
+title:Werden WebDAV, E-Mail-Anhänge oder FTP-Unterstützung angeboten? - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/integrations/webdav-or-ftp,time:2023-07-11 13:23:50
+title:Dropbox Passwords - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/passwords,time:2023-07-11 13:23:57
+title:Sicherheits-Dashboard von Dropbox Passwords - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/security/dropbox-passwords-security-dashboard,time:2023-07-11 13:24:04
+title:Dropbox Passwords 安全面板 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/security/dropbox-passwords-security-dashboard,time:2023-07-11 13:24:11
+title:计费 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/billing,time:2023-07-11 13:24:18
+title:Fakturering - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/billing,time:2023-07-11 13:24:25
+title:Synkronisere - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/sync,time:2023-07-11 13:24:33
+title:Hvordan synkroniserer Dropbox mine filer? - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/sync/sync-overview,time:2023-07-11 13:24:39
+title:Wie synchronisiert Dropbox meine Dateien? - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/sync/sync-overview,time:2023-07-11 13:24:45
+title:Symlinks in Dropbox verwenden - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/sync/symlinks,time:2023-07-11 13:24:52
+title:Symlänkar i Dropbox - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/sync/symlinks,time:2023-07-11 13:25:00
+title:Lagringsutrymme - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/storage-space,time:2023-07-11 13:25:07
+title:Ruang penyimpanan - Bantuan Dropbox,url:https://help.dropbox.com/id-id/storage-space,time:2023-07-11 13:25:14
+title:Promosi ruang penyimpanan Dropbox - Bantuan Dropbox,url:https://help.dropbox.com/id-id/storage-space/promotion-redeem,time:2023-07-11 13:25:21
+title:Dropbox 存储空间促销活动 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/storage-space/promotion-redeem,time:2023-07-11 13:25:28
+title:如何兑换 ASUS + Dropbox 促销空间 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/accounts-billing/space-storage/asus-promotion,time:2023-07-11 13:25:35
+title:ASUS + Dropbox 프로모션 이용 방법 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/storage-space/asus-promotion,time:2023-07-11 13:25:41
+title:공유 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/share,time:2023-07-11 13:25:49
+title:전송을 만들고 보내는 방법 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/share/create-dropbox-transfer,time:2023-07-11 13:25:56
+title:How to create and send a transfer - Dropbox Help,url:https://help.dropbox.com/share/create-dropbox-transfer,time:2023-07-11 13:26:03
+title:How to view sent and received transfers - Dropbox Help,url:https://help.dropbox.com/share/sent-received-transfers,time:2023-07-11 13:26:10
+title:Как просмотреть отправленные и полученные пересылки - Справка Dropbox,url:https://help.dropbox.com/ru-ru/share/sent-received-transfers,time:2023-07-11 13:26:18
+title:Тарифные планы - Справка Dropbox,url:https://help.dropbox.com/ru-ru/plans,time:2023-07-11 13:26:24
+title:Как отменить подписку Dropbox - Справка Dropbox,url:https://help.dropbox.com/ru-ru/plans/cancel-team-subscription,time:2023-07-11 13:26:32
+title:Как найти администратора своего аккаунта Dropbox для рабочих групп - Справка Dropbox,url:https://help.dropbox.com/ru-ru/account-access/find-admin,time:2023-07-11 13:26:39
+title:Hitta en administratör för Dropbox-teamkontot - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/account-access/find-admin,time:2023-07-11 13:26:46
+title:Gå med i ett Dropbox Business-team - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/account-access/join-business-team,time:2023-07-11 13:26:53
+title:Unirte a un equipo de Dropbox Business - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/account-access/join-business-team,time:2023-07-11 13:27:00
+title:Grupos de Dropbox - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/account-access/groups,time:2023-07-11 13:27:08
+title:Dropbox-grupper - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/account-access/groups,time:2023-07-11 13:27:14
+title:Administrere Dropbox-delingstillatelser - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/share/set-folder-permissions,time:2023-07-11 13:27:22
+title:Manage your Dropbox sharing permissions - Dropbox Help,url:https://help.dropbox.com/share/set-file-folder-permissions,time:2023-07-11 13:27:29
+title:Custom branding for shared links or file requests - Dropbox Help,url:https://help.dropbox.com/share/branded-sharing,time:2023-07-11 13:27:37
+title:如何自訂分享連結，在共享作業中加入品牌識別 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/share/branded-sharing,time:2023-07-11 13:27:44
+title:Dropbox Replay －Dropbox 說明,url:https://help.dropbox.com/zh-tw/replay,time:2023-07-11 13:27:51
+title:Dropbox Replay 附加功能 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/installs/dropbox-replay-add-on,time:2023-07-11 13:27:58
+title:Add-on Dropbox Replay - Dropbox Help,url:https://help.dropbox.com/nl-nl/installs/dropbox-replay-add-on,time:2023-07-11 13:28:05
+title:Dropbox Passwords: installeren en aanmelden - Dropbox Help,url:https://help.dropbox.com/nl-nl/installs/download-dropbox-passwords,time:2023-07-11 13:28:11
+title:Dropbox Passwords gebruiken - Dropbox Help,url:https://help.dropbox.com/nl-nl/installs/how-to-use-dropbox-passwords,time:2023-07-11 13:28:18
+title:Sådan bruger du Dropbox Passwords - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/installs/how-to-use-dropbox-passwords,time:2023-07-11 13:28:25
+title:Skift administratorrettigheder for dit Dropbox-team - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/security/change-admin-rights#levels,time:2023-07-11 13:28:32
+title:Sådan administrerer du politikker til dataopbevaring for dit team - Hjælp til Dropbox,url:https://help.dropbox.com/da-dk/security/data-retention,time:2023-07-11 13:28:40
+title:Как управлять политиками хранения данных для рабочей группы - Справка Dropbox,url:https://help.dropbox.com/ru-ru/security/data-retention,time:2023-07-11 13:28:46
+title:Как войти в аккаунт участника рабочей группы Dropbox Advanced или Enterprise с помощью функции "Войти как пользователь" - Справка Dropbox,url:https://help.dropbox.com/ru-ru/security/sign-in-as-user,time:2023-07-11 13:28:52
+title:以 Dropbox Advanced 或 Enterprise 团队成员身份登录 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/security/sign-in-as-user,time:2023-07-11 13:28:59
+title:Dropbox Business 密码控制功能 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/security/password-control,time:2023-07-11 13:29:05
+title:Control de contraseña para Dropbox Business - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/security/password-control,time:2023-07-11 13:29:12
+title:Notificaciones y alertas de seguridad de Dropbox - Ayuda de Dropbox,url:https://help.dropbox.com/es-la/security/security-alerts,time:2023-07-11 13:29:18
+title:Dropbox のセキュリティ アラートと通知 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/security/security-alerts,time:2023-07-11 13:29:25
+title:Advanced チームとコンテンツ コントロールの使い方 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/plans/advanced-team-content-controls,time:2023-07-11 13:29:31
+title:如何使用進階團隊及內容控制功能 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/plans/advanced-team-content-controls,time:2023-07-11 13:29:38
+title:Cómo usar el complemento Controles avanzados de contenido y equipos - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/plans/advanced-team-content-controls,time:2023-07-11 13:29:45
+title:Cambiar el nombre de un equipo de Dropbox Business - Ayuda de Dropbox,url:https://help.dropbox.com/es-es/account-settings/change-team-name,time:2023-07-11 13:29:51
+title:更改 Dropbox 团队帐户的名称 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/account-settings/change-team-name,time:2023-07-11 13:29:58
+title:如何管理 Dropbox Business 团队的应用 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/integrations/app-integrations,time:2023-07-11 13:30:05
+title:Come gestire le applicazioni per il team Dropbox Business - Assistenza Dropbox,url:https://help.dropbox.com/integrations/app-integrations,time:2023-07-11 13:30:12
+title:Accesso all'account - Assistenza Dropbox,url:https://help.dropbox.com/it-it/account-access,time:2023-07-11 13:30:19
+title:Come eliminare un account Dropbox - Assistenza Dropbox,url:https://help.dropbox.com/it-it/account-access/delete-account,time:2023-07-11 13:30:25
+title:Een Dropbox-account verwijderen - Dropbox Help,url:https://help.dropbox.com/nl-nl/account-access/delete-account,time:2023-07-11 13:30:32
+title:Kan ik een Dropbox-account delen met iemand anders? - Dropbox Help,url:https://help.dropbox.com/nl-nl/account-access/share-account,time:2023-07-11 13:30:39
+title:Kan jeg dele en Dropbox-konto med andre? - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/account-access/share-account,time:2023-07-11 13:30:45
+title:Hvordan opprette en Dropbox-konto - Dropbox-hjelp,url:https://help.dropbox.com/nb-no/account-access/create-account,time:2023-07-11 13:30:52
+title:Dropbox アカウントを作成する方法 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/account-access/create-account,time:2023-07-11 13:30:59
+title:モバイル デバイスで Dropbox にファイルをアップロードする - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/create-upload/upload-mobile,time:2023-07-11 13:31:07
+title:모바일 장치에서 Dropbox에 파일 업로드 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/create-upload/upload-mobile,time:2023-07-11 13:31:13
+title:Android 휴대폰에서 파일을 SD 카드로 내보낼 수 있나요? - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/create-upload/android-export-to-sd-card,time:2023-07-11 13:31:19
+title:Comment puis-je exporter des fichiers vers une carte SD à partir de mon téléphone Android ? - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/create-upload/android-export-to-sd-card,time:2023-07-11 13:31:25
+title:Créer et importer - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/create-upload,time:2023-07-11 13:31:32
+title:Numérisation de documents avec l'application Dropbox Scan - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/create-upload/dropbox-scan-app,time:2023-07-11 13:31:38
+title:Comment modifier votre cycle de facturation Dropbox - Aide de Dropbox,url:https://help.dropbox.com/fr-fr/billing/change-date,time:2023-07-11 13:31:46
+title:Как изменить платежный цикл в аккаунте Dropbox - Справка Dropbox,url:https://help.dropbox.com/ru-ru/billing/change-date,time:2023-07-11 13:31:52
+title:Как управлять платежной информацией в Dropbox Family - Справка Dropbox,url:https://help.dropbox.com/ru-ru/billing/dropbox-family-billing-information,time:2023-07-11 13:31:59
+title:Cara menguruskan maklumat pembayaran dalam pelan Dropbox Family - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/billing/dropbox-family-billing-information,time:2023-07-11 13:32:06
+title:Bayar untuk Dropbox dengan Debit Langsung SEPA - Bantuan Dropbox,url:https://help.dropbox.com/ms-my/billing/sepa-direct-debit,time:2023-07-11 13:32:12
+title:Betala för Dropbox with SEPA-autogiro - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/billing/sepa-direct-debit,time:2023-07-11 13:32:19
+title:Varför har mitt kreditkort nekats? - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/billing/failed-payment,time:2023-07-11 13:32:25
+title:為什麼我的信用卡遭拒？ －Dropbox 說明,url:https://help.dropbox.com/zh-tw/billing/failed-payment,time:2023-07-11 13:32:31
+title:如何管理工作團隊的續訂方案 －Dropbox 說明,url:https://help.dropbox.com/zh-tw/billing/subscription-renewals,time:2023-07-11 13:32:38
+title:チームの加入プランの更新を管理する方法 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/billing/subscription-renewals,time:2023-07-11 13:32:46
+title:Dropbox の請求書に記載する組織名を変更する方法 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/billing/plus-change-invoice-information,time:2023-07-11 13:32:52
+title:Dropbox 請求書に記載されている情報を編集する方法 - Dropbox ヘルプ,url:https://help.dropbox.com/ja-jp/billing/customize-edit-invoices,time:2023-07-11 13:32:58
+title:Informationen auf einer Dropbox-Rechnung bearbeiten - Dropbox-Hilfe,url:https://help.dropbox.com/de-de/billing/customize-edit-invoices,time:2023-07-11 13:33:05
+title:How to edit information on a Dropbox invoice - Dropbox Help,url:https://help.dropbox.com/billing/customize-edit-invoices,time:2023-07-11 13:33:12
+title:Change the currency on your subscription - Dropbox Help,url:https://help.dropbox.com/billing/change-currency,time:2023-07-11 13:33:19
+title:Ändra valutan för din prenumeration - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/billing/change-currency,time:2023-07-11 13:33:25
+title:Hur du redigerar faktureringsinformation för Dropbox - Dropbox-hjälpen,url:https://help.dropbox.com/sv-se/billing/change-information,time:2023-07-11 13:33:32
+title:Dropbox 청구 정보 수정 방법 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/billing/change-information,time:2023-07-11 13:33:39
+title:Dropbox 팀의 관리자 권한 변경 - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/security/change-admin-rights#levels,time:2023-07-11 13:33:45
+title:Dropbox Enterprise란 무엇인가요? - Dropbox 도움말,url:https://help.dropbox.com/ko-kr/plans/enterprise,time:2023-07-11 13:33:51
+title:O que é o Dropbox Enterprise? - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/plans/enterprise,time:2023-07-11 13:33:58
+title:Add‑on Creative Tools do Dropbox - Ajuda do Dropbox,url:https://help.dropbox.com/pt-br/plans/creative-tools,time:2023-07-11 13:34:04
+title:Add-on Creatieve tools van Dropbox - Dropbox Help,url:https://help.dropbox.com/nl-nl/plans/creative-tools,time:2023-07-11 13:34:11
+title:Een Dropbox Family-abonnement beheren - Dropbox Help,url:https://help.dropbox.com/nl-nl/plans/manage-family-plan,time:2023-07-11 13:34:18
+title:How to manage a Dropbox Family plan - Dropbox Help,url:https://help.dropbox.com/plans/manage-family-plan,time:2023-07-11 13:34:26
+title:Troubleshooting issues with Dropbox Family - Dropbox Help,url:https://help.dropbox.com/accounts-billing/plans-upgrades/troubleshoot-family-plan,time:2023-07-11 13:34:34
+title:Dropbox Family 问题排查 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/plans/troubleshoot-family-plan,time:2023-07-11 13:34:42
+title:Dropbox Family 套餐常见问题解答 - Dropbox 帮助,url:https://help.dropbox.com/zh-cn/plans/dropbox-family-faqs,time:2023-07-11 13:34:52
+title:Często zadawane pytania o taryfę Dropbox Family - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/plans/dropbox-family-faqs,time:2023-07-11 13:35:58
+title:Taryfa Dropbox Family: przegląd - Pomoc Dropbox,url:https://help.dropbox.com/pl-pl/plans/dropbox-family-plan,time:2023-07-11 13:36:44
+url get failed: https://help.dropbox.com/plans/dropbox-family-plan?fallback=true
+url get failed: https://help.dropbox.com/pl-pl/sync/make-files-online-only
+url get failed: https://help.dropbox.com/pt-br/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/account-access/enable-two-step-verification
+url get failed: https://help.dropbox.com/pl-pl/plans/cancel-family-plan
+url get failed: https://help.dropbox.com/zh-tw/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/installs/access-dropbox
+url get failed: https://help.dropbox.com/ko-kr/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/delete-restore/rewind
+url get failed: https://help.dropbox.com/pl-pl/security/how-security-works
+url get failed: https://help.dropbox.com/pl-pl/delete-restore/delete-dropbox-device
+url get failed: https://help.dropbox.com/es-es/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/it-it/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/share/share-files-family-plan
+url get failed: https://help.dropbox.com/ja-jp/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/delete-restore/recover-deleted-files-folders
+url get failed: https://help.dropbox.com/ms-my/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/fr-fr/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/organize/how-to-use-dropbox-backup
+url get failed: https://help.dropbox.com/pl-pl/create-upload/add-files
+url get failed: https://help.dropbox.com/sv-se/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/create-upload/camera-uploads-overview
+url get failed: https://help.dropbox.com/id-id/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/view-edit/search-content
+url get failed: https://help.dropbox.com/pl-pl/installs/download-dropbox
+url get failed: https://help.dropbox.com/da-dk/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/es-la/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/security/dropbox-vault
+url get failed: https://help.dropbox.com/pl-pl/delete-restore/version-history-overview
+url get failed: https://help.dropbox.com/de-de/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/pl-pl/share/share-files-family-plan#familyroom
+url get failed: https://help.dropbox.com/pl-pl/sign
+url get failed: https://help.dropbox.com/pl-pl/security
+url get failed: https://help.dropbox.com/pl-pl/organize
+url get failed: https://help.dropbox.com/pl-pl/view-edit
+url get failed: https://help.dropbox.com/pl-pl/backup
+url get failed: https://help.dropbox.com/pl-pl/files-folders/restore-delete/extended-version-history
+url get failed: https://help.dropbox.com/pl-pl/plans/dropbox-family-mobile-purchase
+url get failed: https://help.dropbox.com/pl-pl/transfer
+url get failed: https://help.dropbox.com/pl-pl/installs
+url get failed: https://help.dropbox.com/pl-pl/delete-restore
+url get failed: https://help.dropbox.com/pl-pl/get-started
+url get failed: https://help.dropbox.com/sv-se/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/pt-br/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/es-es/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/zh-tw/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/es-la/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/nb-no/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/ko-kr/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/fr-fr/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/plans/dropbox-family-faqs?fallback=true
+url get failed: https://help.dropbox.com/de-de/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/da-dk/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/accounts-billing/space-storage/how-much-free-space?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/share-files-family-plan#space?fallback=true
+url get failed: https://help.dropbox.com/nl-nl/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/it-it/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/id-id/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/ms-my/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/files-folders/restore-delete/delete-files?fallback=true
+url get failed: https://help.dropbox.com/ja-jp/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/cancel-family-plan#leaving?fallback=true
+url get failed: https://help.dropbox.com/zh-cn/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/zh-cn/plans/dropbox-family-mobile-purchase
+url get failed: https://help.dropbox.com/zh-cn/files-folders/restore-delete/extended-version-history
+url get failed: https://help.dropbox.com/da-dk/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/plans/troubleshoot-family-plan?fallback=true
+url get failed: https://help.dropbox.com/pt-br/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/zh-tw/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/ko-kr/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/manage-family-plan?fallback=true
+url get failed: https://help.dropbox.com/pl-pl/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/it-it/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/promotion-license-key?fallback=true
+url get failed: https://help.dropbox.com/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/de-de/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/ms-my/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/files-folders/restore-delete/extended-version-history?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/security/restricted-access-region-country?fallback=true
+url get failed: https://help.dropbox.com/id-id/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/es-la/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/sv-se/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/es-es/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/fr-fr/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/nb-no/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/accounts-billing/cancellations-refunds/cancel-mobile?fallback=true
+url get failed: https://help.dropbox.com/ja-jp/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/plans/dropbox-family-plan
+url get failed: https://help.dropbox.com/plans/dropbox-family-faqs
+url get failed: https://help.dropbox.com/plans/dropbox-family-mobile-purchase
+url get failed: https://help.dropbox.com/nl-nl/plans/dropbox-family-mobile-purchase
+url get failed: https://help.dropbox.com/it-it/plans/manage-family-plan
+url get failed: https://help.dropbox.com/zh-cn/plans/manage-family-plan
+url get failed: https://help.dropbox.com/fr-fr/plans/manage-family-plan
+url get failed: https://help.dropbox.com/ja-jp/plans/manage-family-plan
+url get failed: https://help.dropbox.com/ms-my/plans/manage-family-plan
+url get failed: https://help.dropbox.com/sv-se/plans/manage-family-plan
+url get failed: https://help.dropbox.com/zh-tw/plans/manage-family-plan
+url get failed: https://help.dropbox.com/nb-no/plans/manage-family-plan
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/share-files-family-plan#familyroom?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/dropbox-family-faqs?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/troubleshoot-family-plan?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/share-files-family-plan?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/dropbox-family-billing-information?fallback=true
+url get failed: https://help.dropbox.com/pl-pl/plans/manage-family-plan
+url get failed: https://help.dropbox.com/pt-br/plans/manage-family-plan
+url get failed: https://help.dropbox.com/nl-nl/plans/troubleshoot-family-plan
+url get failed: https://help.dropbox.com/plans/manage-family-plan?fallback=true
+url get failed: https://help.dropbox.com/es-la/plans/manage-family-plan
+url get failed: https://help.dropbox.com/id-id/plans/manage-family-plan
+url get failed: https://help.dropbox.com/de-de/plans/manage-family-plan
+url get failed: https://help.dropbox.com/es-es/plans/manage-family-plan
+url get failed: https://help.dropbox.com/ko-kr/plans/manage-family-plan
+url get failed: https://help.dropbox.com/da-dk/plans/manage-family-plan
+url get failed: https://help.dropbox.com/nl-nl/plans/dropbox-backup-plan
+url get failed: https://help.dropbox.com/nl-nl/plans/data-governance
+url get failed: https://help.dropbox.com/it-it/plans/creative-tools
+url get failed: https://help.dropbox.com/fr-fr/plans/creative-tools
+url get failed: https://help.dropbox.com/ko-kr/plans/creative-tools
+url get failed: https://help.dropbox.com/files-folders/sort-preview/preview?fallback=true
+url get failed: https://help.dropbox.com/pt-br/plans/join-team-existing-user
+url get failed: https://help.dropbox.com/plans/creative-tools
+url get failed: https://help.dropbox.com/zh-tw/plans/creative-tools
+url get failed: https://help.dropbox.com/ja-jp/plans/creative-tools
+url get failed: https://help.dropbox.com/files-folders/share/comment-timestamp?fallback=true
+url get failed: https://help.dropbox.com/ms-my/plans/creative-tools
+url get failed: https://help.dropbox.com/plans/creative-tools?fallback=true
+url get failed: https://help.dropbox.com/pt-br/plans/data-governance
+url get failed: https://help.dropbox.com/zh-cn/plans/creative-tools
+url get failed: https://help.dropbox.com/es-es/plans/creative-tools
+url get failed: https://help.dropbox.com/de-de/plans/creative-tools
+url get failed: https://help.dropbox.com/nb-no/plans/creative-tools
+url get failed: https://help.dropbox.com/pt-br/plans/cancel-family-plan
+url get failed: https://help.dropbox.com/sv-se/plans/creative-tools
+url get failed: https://help.dropbox.com/pl-pl/plans/creative-tools
+url get failed: https://help.dropbox.com/es-la/plans/creative-tools
+url get failed: https://help.dropbox.com/da-dk/plans/creative-tools
+url get failed: https://help.dropbox.com/files-folders/share/dropbox-transfer?fallback=true
+url get failed: https://help.dropbox.com/id-id/plans/creative-tools
+url get failed: https://help.dropbox.com/files-folders/sort-preview/file-types-that-preview?fallback=true
+url get failed: https://help.dropbox.com/pt-br/installs
+url get failed: https://help.dropbox.com/pt-br/organize
+url get failed: https://help.dropbox.com/pt-br/plans/advanced-plan
+url get failed: https://help.dropbox.com/pt-br/view-edit
+url get failed: https://help.dropbox.com/pt-br/delete-restore
+url get failed: https://help.dropbox.com/pt-br/transfer
+url get failed: https://help.dropbox.com/pt-br/sign
+url get failed: https://help.dropbox.com/pt-br/plans/standard-plan
+url get failed: https://help.dropbox.com/pt-br/get-started
+url get failed: https://help.dropbox.com/pt-br/security
+url get failed: https://help.dropbox.com/pt-br/backup
+url get failed: https://help.dropbox.com/plans/enterprise
+url get failed: https://help.dropbox.com/ko-kr/plans/dropbox-backup-plan
+url get failed: https://help.dropbox.com/es-es/plans/enterprise
+url get failed: https://help.dropbox.com/id-id/plans/enterprise
+url get failed: https://help.dropbox.com/it-it/plans/enterprise
+url get failed: https://help.dropbox.com/nl-nl/plans/enterprise
+url get failed: https://help.dropbox.com/teams-admins/admin/domain-insights-account-capture?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/advanced-plan?fallback=true
+url get failed: https://help.dropbox.com/plans/enterprise?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/standard-plan
+url get failed: https://help.dropbox.com/teams-admins/admin/enterprise-mobility-management?fallback=true
+url get failed: https://help.dropbox.com/de-de/plans/enterprise
+url get failed: https://help.dropbox.com/ja-jp/plans/enterprise
+url get failed: https://help.dropbox.com/es-la/plans/enterprise
+url get failed: https://help.dropbox.com/teams-admins/admin/network-control?fallback=true
+url get failed: https://help.dropbox.com/pl-pl/plans/enterprise
+url get failed: https://help.dropbox.com/nb-no/plans/enterprise
+url get failed: https://help.dropbox.com/ms-my/plans/enterprise
+url get failed: https://help.dropbox.com/zh-tw/plans/enterprise
+url get failed: https://help.dropbox.com/sv-se/plans/enterprise
+url get failed: https://help.dropbox.com/fr-fr/plans/enterprise
+url get failed: https://help.dropbox.com/ko-kr/delete-restore/remote-wipe
+url get failed: https://help.dropbox.com/ko-kr/plans/data-governance
+url get failed: https://help.dropbox.com/ko-kr/security/suspend-member
+url get failed: https://help.dropbox.com/ko-kr/plans/standard-plan
+url get failed: https://help.dropbox.com/ko-kr/plans/advanced-plan
+url get failed: https://help.dropbox.com/ko-kr/plans/downgrade-dropbox-plus-professional-plans
+url get failed: https://help.dropbox.com/pt-br/billing/change-information
+url get failed: https://help.dropbox.com/it-it/billing/change-information
+url get failed: https://help.dropbox.com/es-es/billing/change-information
+url get failed: https://help.dropbox.com/billing/change-information?fallback=true
+url get failed: https://help.dropbox.com/pl-pl/billing/change-information
+url get failed: https://help.dropbox.com/nl-nl/billing/change-information
+url get failed: https://help.dropbox.com/id-id/billing/change-information
+url get failed: https://help.dropbox.com/ms-my/billing/change-information
+url get failed: https://help.dropbox.com/de-de/billing/change-information
+url get failed: https://help.dropbox.com/fr-fr/billing/change-information
+url get failed: https://help.dropbox.com/ja-jp/billing/change-information
+url get failed: https://help.dropbox.com/es-la/billing/change-information
+url get failed: https://help.dropbox.com/sv-se/security/change-admin-rights#levels
+url get failed: https://help.dropbox.com/nb-no/billing/change-information
+url get failed: https://help.dropbox.com/zh-tw/billing/change-information
+url get failed: https://help.dropbox.com/sv-se/plans/downgrade-dropbox-plus-professional-plans
+url get failed: https://help.dropbox.com/ms-my/billing/change-currency
+url get failed: https://help.dropbox.com/de-de/billing/change-currency
+url get failed: https://help.dropbox.com/es-es/billing/change-currency
+url get failed: https://help.dropbox.com/nb-no/billing/change-currency
+url get failed: https://help.dropbox.com/es-la/billing/change-currency
+url get failed: https://help.dropbox.com/pt-br/billing/change-currency
+url get failed: https://help.dropbox.com/nl-nl/billing/change-currency
+url get failed: https://help.dropbox.com/it-it/billing/change-currency
+url get failed: https://help.dropbox.com/id-id/billing/change-currency
+url get failed: https://help.dropbox.com/zh-tw/billing/change-currency
+url get failed: https://help.dropbox.com/billing/change-currency?fallback=true
+url get failed: https://help.dropbox.com/plans/downgrade-dropbox-plus-professional-plans
+url get failed: https://help.dropbox.com/fr-fr/billing/change-currency
+url get failed: https://help.dropbox.com/pl-pl/billing/change-currency
+url get failed: https://help.dropbox.com/ko-kr/billing/change-currency
+url get failed: https://help.dropbox.com/nb-no/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/es-es/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/ru-ru/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/zh-tw/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/vat-id?fallback=true
+url get failed: https://help.dropbox.com/pt-br/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/billing/customize-edit-invoices?fallback=true
+url get failed: https://help.dropbox.com/it-it/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/change-billing-currency?fallback=true
+url get failed: https://help.dropbox.com/es-la/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/id-id/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/nl-nl/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/ko-kr/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/pl-pl/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/fr-fr/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/sv-se/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/es-es/billing/plus-change-invoice-information
+url get failed: https://help.dropbox.com/billing/plus-change-invoice-information?fallback=true
+url get failed: https://help.dropbox.com/pt-br/billing/plus-change-invoice-information
+url get failed: https://help.dropbox.com/billing/plus-change-invoice-information
+url get failed: https://help.dropbox.com/it-it/billing/plus-change-invoice-information
+url get failed: https://help.dropbox.com/de-de/billing/plus-change-invoice-information
+url get failed: https://help.dropbox.com/ja-jp/billing/change-currency
+url get failed: https://help.dropbox.com/nl-nl/billing/subscription-renewals
+url get failed: https://help.dropbox.com/ru-ru/billing/subscription-renewals
+url get failed: https://help.dropbox.com/teams-admins/admin/change-admin-rights#levels?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/change-billing-date?fallback=true
+url get failed: https://help.dropbox.com/es-es/billing/subscription-renewals
+url get failed: https://help.dropbox.com/pl-pl/billing/subscription-renewals
+url get failed: https://help.dropbox.com/de-de/billing/subscription-renewals
+url get failed: https://help.dropbox.com/billing/subscription-renewals
+url get failed: https://help.dropbox.com/billing/subscription-renewals?fallback=true
+url get failed: https://help.dropbox.com/pt-br/billing/subscription-renewals
+url get failed: https://help.dropbox.com/accounts-billing/cancellations-refunds/cancel-team-subscription?fallback=true
+url get failed: https://help.dropbox.com/es-la/billing/subscription-renewals
+url get failed: https://help.dropbox.com/id-id/billing/subscription-renewals
+url get failed: https://help.dropbox.com/nb-no/billing/subscription-renewals
+url get failed: https://help.dropbox.com/it-it/billing/subscription-renewals
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/add-licenses-or-space?fallback=true
+url get failed: https://help.dropbox.com/ko-kr/billing/subscription-renewals
+url get failed: https://help.dropbox.com/accounts-billing/plans-upgrades/downgrade-team-plan?fallback=true
+url get failed: https://help.dropbox.com/ja-jp/billing/failed-payment
+url get failed: https://help.dropbox.com/nl-nl/billing/failed-payment
+url get failed: https://help.dropbox.com/ko-kr/billing/failed-payment
+url get failed: https://help.dropbox.com/pt-br/billing/failed-payment
+url get failed: https://help.dropbox.com/ru-ru/billing/failed-payment
+url get failed: https://help.dropbox.com/it-it/billing/failed-payment
+url get failed: https://help.dropbox.com/de-de/billing/failed-payment
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/change-information?fallback=true
+url get failed: https://help.dropbox.com/accounts-billing/payments-billing/change-information
+url get failed: https://help.dropbox.com/billing/failed-payment
+url get failed: https://help.dropbox.com/nb-no/billing/failed-payment
+url get failed: https://help.dropbox.com/es-la/billing/failed-payment
+url get failed: https://help.dropbox.com/pl-pl/billing/failed-payment
+url get failed: https://help.dropbox.com/id-id/billing/failed-payment
+url get failed: https://help.dropbox.com/es-es/billing/failed-payment
+url get failed: https://help.dropbox.com/billing/failed-payment?fallback=true
+url get failed: https://help.dropbox.com/sv-se/billing/subscription-renewals
+url get failed: https://help.dropbox.com/ko-kr/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/ru-ru/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/pl-pl/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/id-id/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/es-es/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/pt-br/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/billing/sepa-direct-debit?fallback=true
+url get failed: https://help.dropbox.com/nb-no/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/it-it/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/es-la/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/nl-nl/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/ms-my/billing/failed-payment
+url get failed: https://help.dropbox.com/de-de/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/zh-tw/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/ja-jp/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/fr-fr/billing/sepa-direct-debit
+url get failed: https://help.dropbox.com/ms-my/billing/customize-edit-invoices
+url get failed: https://help.dropbox.com/ms-my/billing/subscription-renewals
+url get failed: https://help.dropbox.com/de-de/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/fr-fr/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/sv-se/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/nl-nl/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/billing/dropbox-family-billing-information?fallback=true
+url get failed: https://help.dropbox.com/ko-kr/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/ja-jp/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/pt-br/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/es-la/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/zh-tw/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/pl-pl/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/id-id/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/nb-no/billing/dropbox-family-billing-information
+url get failed: https://help.dropbox.com/es-es/billing/dropbox-family-billing-information
