@@ -171,7 +171,7 @@ def crawl(siteid, url):
                         seen.add(link)
         except Exception as ex:
             dataTosave.append({"title": "ERROR", "url":url, "content": "ERROR:" + str(ex) })                
-            print(f"url get failed: {url}")
+            print(f"url get failed: {url},ERROR: {str(ex)}")
 
     # Serializing json
     json_object = json.dumps(dataTosave, indent=4)
