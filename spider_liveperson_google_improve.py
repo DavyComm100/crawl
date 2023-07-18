@@ -42,12 +42,21 @@ def crawl():
     googleUrl = "https://www.google.com/search?hl=en&q="
     if not os.path.exists("liveperson"):
         os.makedirs("liveperson")
-    names = extract_xls(os.path.join(os.getcwd(),'spider/data/USCompanies.xls'))
+    data = extract_xls(os.path.join(os.getcwd(),'spider/data/USCompanies.xls'))
     #names = ["godaddy"]
-    print(len(names))
+    print(len(data))
     count=0
     index=0
-    for name in names:
+    for item in data:
+        name = item["name"]
+        liveperson = item["liveperson"]
+        website = item["website"]
+        if liveperson == "YES":
+            df_init['Name'].append(name)
+            df_init['LivePerson'].append('YES')
+            df_init['Website'].append(website)
+            continue
+        
         param = urllib.parse.quote_plus(name + ' live chat')
         #time.sleep(2)
         url = googleUrl + param
@@ -80,7 +89,7 @@ def crawl():
                         print('no match')
                         df_init['Name'].append(name)
                         df_init['LivePerson'].append('')
-                        df_init['Website'].append('')
+                        df_init['Website'].append(website)
                     else:
                         #df_init['Name'].append(name)
                         #df_init['Website'].append(link)
@@ -106,44 +115,44 @@ def crawl():
                     print('no match')
                     df_init['Name'].append(name)
                     df_init['LivePerson'].append('')
-                    df_init['Website'].append('')
+                    df_init['Website'].append(website)
             else:
                 df_init['Name'].append(name)
                 df_init['LivePerson'].append('ERROR')
-                df_init['Website'].append(url)
+                df_init['Website'].append(website)
         except Exception as e:
             print(f"url get failed: {url}, {str(e)}")
             df_init['Name'].append(name)
             df_init['LivePerson'].append('ERROR:' + str(e))
-            df_init['Website'].append(url)
+            df_init['Website'].append(website)
         count = count +1
-        if count == 200:
+        if count == 100:
             count = 0
             index=index+1
             print(len(df_init['Name']))
             df = pd.DataFrame(df_init)
             #filename = 'CAGoogle'+str(index)+'.csv'
-            filename = os.path.join("liveperson",'CAGoogle'+str(index)+'.csv')
+            filename = os.path.join("liveperson",'USGoogle'+str(index)+'.csv')
             df.to_csv(filename, index=False, encoding="utf-8-sig")
             time.sleep(10)
 
     print(len(df_init['Name']))
     df = pd.DataFrame(df_init)    
     #filename = 'CAGoogle.csv'
-    filename = os.path.join("liveperson", 'CAGoogle.csv')
+    filename = os.path.join("liveperson", 'USGoogle.csv')
     df.to_csv(filename, index=False, encoding="utf-8-sig")
           
 def extract_xls(data_path):
     workbook = xlrd.open_workbook(data_path)
     table = workbook.sheets()[0]
-    names = []
+    data = []
     for i in range(table.nrows):
         if i == 0:
             continue
         name = str(table.cell(i, 0).value)
-        #province = str(table.cell(i, 1).value)
-        #print(name)
-        names.append(name)
-    return names
+        website = str(table.cell(i, 1).value)
+        liveperson = str(table.cell(i, 2).value)
+        data.append({"name":name, "website": website, "liveperson": liveperson})
+    return data
 
 crawl()
