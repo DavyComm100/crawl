@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os.path
 import xlrd
-import requests
+import trafilatura
 import requests_html
 from bs4 import BeautifulSoup
 from lxml import etree
@@ -42,7 +42,7 @@ def crawl():
     googleUrl = "https://www.google.com/search?hl=en&q="
     if not os.path.exists("liveperson"):
         os.makedirs("liveperson")
-    names = extract_xls(os.path.join(os.getcwd(),'spider/data/CACompanies.xls'))
+    names = extract_xls(os.path.join(os.getcwd(),'spider/data/USCompanies.xls'))
     #names = ["godaddy"]
     print(len(names))
     count=0
@@ -53,8 +53,8 @@ def crawl():
         url = googleUrl + param
         #url = googleUrl + urllib.parse.urlencode(name + ' live chat')
         try:
-            webpage = get_websitecontent(url)
-            if webpage != "":
+            webpage = trafilatura.fetch_url(url)
+            if webpage is not None and webpage != "":
             #soup = BeautifulSoup(webpage, "html.parser")
                 dom = etree.HTML(webpage)
 
@@ -85,7 +85,7 @@ def crawl():
                         #df_init['Name'].append(name)
                         #df_init['Website'].append(link)
                         try:                                              
-                            webpagecontent = get_websitecontent(link)        
+                            webpagecontent = trafilatura.fetch_url(link)        
                             #print(link)
                             df_init['Name'].append(name)            
                             df_init['Website'].append(link)

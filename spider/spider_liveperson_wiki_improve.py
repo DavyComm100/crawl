@@ -2,7 +2,7 @@
 import os.path
 import xlrd
 import requests
-import requests_html
+import trafilatura
 from bs4 import BeautifulSoup
 from lxml import etree
 import pandas as pd
@@ -30,8 +30,8 @@ def crawlFormGoogle(name:str):
             'referer':'https://www.google.com/'})
     url = googleUrl + name
     try:
-        webpage = requests.get(url, headers=HEADERS, timeout=10)
-        soup = BeautifulSoup(webpage.content, "html.parser")
+        webpage = trafilatura.fetch_url(url)
+        soup = BeautifulSoup(webpage, "html.parser")
         dom = etree.HTML(str(soup))
         link = ""
         searchData = dom.xpath('//div[@id="main"]//div[contains(@class, "fP1Qef")]//a')
@@ -60,12 +60,14 @@ def crawlFormGoogle(name:str):
 def crawlWebsite(name:str, link:str):
     print(link)
     try:
-        webpagecontent = get_websitecontent(link)        
-        df_init['Name'].append(name)            
-        df_init['Website'].append(link)        
-        if 'liveperson.net' in webpagecontent.html or 'liveperson' in webpagecontent.html or 'liveper.sn' in webpagecontent.html:
+        webpagecontent = trafilatura.fetch_url(link)               
+        if 'liveperson.net' in webpagecontent or 'liveperson' in webpagecontent or 'liveper.sn' in webpagecontent:
+            df_init['Name'].append(name)            
+            df_init['Website'].append(link)
             df_init['LivePerson'].append('Yes')
         else:
+            df_init['Name'].append(name)            
+            df_init['Website'].append(link)
             df_init['LivePerson'].append('')
     except:
         print(f"url get failed: {link}")
@@ -75,7 +77,7 @@ def crawlWebsite(name:str, link:str):
             
 def crawl():
     wikiUrl = "https://en.wikipedia.org/wiki/"    
-    data = extract_xls(os.path.join(os.getcwd(),'spider/data/USCompanies1.xls'))
+    data = extract_xls(os.path.join(os.getcwd(),'spider/data/USCompanies.xls'))
     #names = ["BigPark"]
     print(len(data))
     count=0
@@ -89,8 +91,8 @@ def crawl():
             crawlWebsite(name, website)
         else:
             try:
-                webpage = requests.get(url, timeout=10)
-                soup = BeautifulSoup(webpage.content, "html.parser")
+                webpage = trafilatura.fetch_url(url)
+                soup = BeautifulSoup(webpage, "html.parser")
                 dom = etree.HTML(str(soup))
     
                 searchData = dom.xpath('//main[@id="content"]//table[contains(@class, "infobox")]//a[contains(@class, "external")]')
@@ -144,24 +146,5 @@ def extract_xls(data_path):
         #print(name)
         result.append({"name": name, "website": website})
     return result
-
-def get_websitecontent(url):
-        # 自动生成一个useragent
-        user_agent = requests_html.user_agent()
-        # 创建session对象
-        session = requests_html.HTMLSession()
-        HEADERS = {
-            "User-Agent":user_agent
-        }
-        # 请求Url
-        r = session.get(url,headers=HEADERS, timeout=15)
-        if len(r.history) > 0:
-            his = r.history[len(r.history)-1]
-            if his.status_code == 302:
-                link = his.headers["Location"]                
-                r = session.get(link,headers=HEADERS, timeout=15)        
-        # 渲染Javasc内容，模拟滚动条翻页5次，每次滚动停止1秒
-        r.html.render(scrolldown=6, sleep=1, timeout=300)
-        return r.html
 
 crawl()
