@@ -86,15 +86,16 @@ def crawl():
                         #df_init['Website'].append(link)
                         try:                                              
                             webpagecontent = trafilatura.fetch_url(link)        
-                            #print(link)
-                            df_init['Name'].append(name)            
-                            df_init['Website'].append(link)
-                            
+                            #print(link)                                                        
                             if 'liveperson.net' in webpagecontent or 'liveperson' in webpagecontent or 'liveper.sn' in webpagecontent:
                                 print('Yes')
+                                df_init['Name'].append(name)            
+                                df_init['Website'].append(link)
                                 df_init['LivePerson'].append('Yes')
                             else:
                                 print('No')
+                                df_init['Name'].append(name)            
+                                df_init['Website'].append(link)
                                 df_init['LivePerson'].append('')
                         except Exception as ex:
                             print(f"url get failed: {link}, {str(ex)}")
@@ -116,7 +117,7 @@ def crawl():
             df_init['LivePerson'].append('ERROR:' + str(e))
             df_init['Website'].append(url)
         count = count +1
-        if count == 100:
+        if count == 200:
             count = 0
             index=index+1
             print(len(df_init['Name']))
