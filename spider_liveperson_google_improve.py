@@ -117,6 +117,7 @@ def crawl():
                     df_init['LivePerson'].append('')
                     df_init['Website'].append(website)
             else:
+                print(f"url get failed: {url}")
                 df_init['Name'].append(name)
                 df_init['LivePerson'].append('ERROR')
                 df_init['Website'].append(website)
