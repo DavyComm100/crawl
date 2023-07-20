@@ -20,8 +20,28 @@ utf8_parser = lxml.html.HTMLParser(encoding="utf-8")
 # 自动生成一个useragent
 user_agent = requests_html.user_agent()
 HEADERS = {
-        "User-Agent":user_agent
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept-Language': 'en-US,en;q=1',
     }
+# 设置代理 IP 和端口
+proxy = {
+    'http': 'http://45.63.24.57:80',
+    'http': 'http://103.156.56.6:80',
+    'http': 'http://47.88.62.42:80',
+    'http': 'http://160.72.82.101:80',
+    'http': 'http://172.67.179.201:80',
+    'http': 'http://172.64.94.136:80',
+    'http': 'http://104.26.13.19:80',
+    'http': 'http://172.67.70.62:80',
+    'http': 'http://104.25.193.145:80',
+    'http': 'http://172.67.31.55:80',
+    'http': 'http://104.25.172.8:80',
+    'http': 'http://104.21.72.241:80',
+    'http': 'http://104.21.19.144:80',
+    'http': 'http://104.18.16.111:80',
+    'http': 'http://144.217.197.151:39399',
+    'http': 'http://104.18.188.57:80'
+}
 debug_urls = []
 
 def clean_html(input):
@@ -102,7 +122,7 @@ def get_domain_hyperlinks(base_address, domain, r, url):
     return list(set(clean_links))
 
 
-def crawl(siteid, url):
+def crawl(siteid, url, lang):
     # Parse the URL and get the domain
     url_obj = urlparse(url)
     domain = url_obj.netloc
@@ -132,10 +152,15 @@ def crawl(siteid, url):
         try:
             # Get the next URL from the queue
             url = queue.pop()
+            time.sleep(3)
             # 创建session对象
             session = requests_html.HTMLSession()
             # 请求Url
-            r = session.get(url,headers=HEADERS)
+            r = session.get(url, headers=HEADERS, proxies=proxy)
+            # try to filter english page.
+            content_language = r.headers.get('Content-Language')
+            if content_language and lang not in content_language:
+                continue
             if 'text/html' not in r.headers['Content-Type']:
                 continue
             if r.status_code != 200:
@@ -145,6 +170,10 @@ def crawl(siteid, url):
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                 r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
+                # try to filter english page.
+                lang_attribute = response.find('html[lang]')
+                if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
+                    continue
                 doc = Document(clean_html(response.html))
                 title = doc.title()
                 content = doc.summary(True)
@@ -187,4 +216,4 @@ def crawl(siteid, url):
         outfile.write(json_object)
     return len(dataTosave)
 
-crawl(10000, "https://help.dropbox.com/")
+crawl(10000, "https://help.dropbox.com/","en")
