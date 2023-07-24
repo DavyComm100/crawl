@@ -10,7 +10,7 @@ import shutil
 import json
 import urllib.parse
 import time
-import requests_html import AsyncHTMLSession
+import requests_html
 from lxml.html import tostring
 import lxml.html
 
