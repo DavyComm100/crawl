@@ -152,7 +152,8 @@ def crawl(siteid, url, lang):
         try:
             # Get the next URL from the queue
             url = queue.pop()
-            time.sleep(3)
+            print(url)
+            #time.sleep(1)
             # 创建session对象
             session = requests_html.HTMLSession()
             # 请求Url
