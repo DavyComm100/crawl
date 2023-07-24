@@ -10,7 +10,7 @@ import shutil
 import json
 import urllib.parse
 import time
-import requests_html
+import requests_html import AsyncHTMLSession
 from lxml.html import tostring
 import lxml.html
 
@@ -170,6 +170,7 @@ def crawl(siteid, url, lang):
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                 r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
+                session.close() 
                 # try to filter english page.
                 lang_attribute = response.find('html[lang]')
                 if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
