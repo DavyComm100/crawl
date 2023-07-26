@@ -178,7 +178,6 @@ def crawlbysitemap(siteid, url, lang, response):
                     # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                     r.html.render(scrolldown=2, sleep=1, timeout=300)
                     response = r.html
-                    session.close() 
                     lang_attribute = response.find('html[lang]')
                     if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
                         continue
@@ -264,7 +263,6 @@ def crawlbyrecursion(siteid, url, lang):
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                 r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
-                session.close() 
                 # try to filter english page.
                 lang_attribute = response.find('html[lang]')
                 if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
