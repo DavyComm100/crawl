@@ -130,9 +130,11 @@ def crawl(siteid, url, lang):
     sitemapurl = "http://" + domain + "/sitemap.xml"
     response = urllib.request.urlopen(sitemapurl)
     if response.getcode() == 200:
+        print(f"crawlbysitemap")
         crawlbysitemap(siteid, url, lang, response)
     else:
-        crawl(siteid, url, lang)
+        print(f"crawlbyrecursion")
+        crawlbyrecursion(siteid, url, lang)
 
 def crawlbysitemap(siteid, url, lang, response):
     url_obj = urlparse(url)
@@ -176,6 +178,7 @@ def crawlbysitemap(siteid, url, lang, response):
                     # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                     r.html.render(scrolldown=2, sleep=1, timeout=300)
                     response = r.html
+                    session.close() 
                     lang_attribute = response.find('html[lang]')
                     if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
                         continue
@@ -261,6 +264,7 @@ def crawlbyrecursion(siteid, url, lang):
                 # 渲染Javascript内容，模拟滚动条翻页3次，每次滚动停止1秒
                 r.html.render(scrolldown=3, sleep=1, timeout=300)
                 response = r.html
+                session.close() 
                 # try to filter english page.
                 lang_attribute = response.find('html[lang]')
                 if lang_attribute and lang not in lang_attribute[0].attrs['lang']:
