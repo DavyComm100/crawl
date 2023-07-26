@@ -162,7 +162,7 @@ def crawlbysitemap(siteid, url, lang, response):
     for url in page_urls:
         if re.match(pattern, url):
             try:
-                time.sleep(2)
+                time.sleep(8)
                 # 请求Url
                 r = session.get(url)
                 # try to filter english page.
@@ -247,7 +247,7 @@ def crawlbyrecursion(siteid, url, lang):
         try:
             # Get the next URL from the queue
             url = queue.pop()
-            time.sleep(3)
+            time.sleep(8)
             # 请求Url
             r = session.get(url)
             # try to filter english page.
