@@ -150,6 +150,7 @@ def generatedirs(siteid, base_address):
     if os.path.exists(dirname):
         shutil.rmtree(dirname)
     os.mkdir(dirname) 
+    return dirname
 
 def resolvexml(response):
     xml_data = response.read()
@@ -158,6 +159,7 @@ def resolvexml(response):
     return [url.findtext("{http://www.sitemaps.org/schemas/sitemap/0.9}loc") for url in urls]
 
 def savedata(url, lang, dirname, titles, dataTosave):
+    global session
     r = session.get(url)
     if r.status_code == 200:
         # try to filter english page.
@@ -192,6 +194,8 @@ def savedata(url, lang, dirname, titles, dataTosave):
                 titles.append(title)
         return response
     elif r.status_code == 403:
+        # retry.
+        time.sleep(60)
         session.close()
         session = html_session()
         savedata(url, lang, dirname, titles, dataTosave)
