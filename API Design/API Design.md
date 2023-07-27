@@ -1,19 +1,8 @@
 ## Email Agent Assist
-* 问题列表
-  * 是否需要feedback 接口？
-  * 爬虫--通过网站内容？
-  * KB或FAQ 的文档 (需要支持哪些文档类型? pdf, word, excel, csv)
-  * 第一次创建需要多久，后面更新需要多久，定期更新的周期-每天？
-  * Query 返回结果需要多久？ 是否用流式输出？
-  * 邮件数据: body - 邮件list
-
 * `Email Agent Assist` - Email Agent Assist Manage
-    * `POST bot/agentAssist` - [Create a Agent Assist](#Create-a-agent-assist)
-    * `PUT bot/agentAssist` - [Update the Agent Assist](#update-the-agent-assist)
-    * `GET bot/agentAssist` - [Get agent Assist status](#Get-agent-Assist-status)
+    * `POST bot/agentAssist` - [Create OR Update Agent Assist](#Create-a-agent-assist)
+    * `GET bot/agentAssist/operations/{operationId}` - [Get agent Assist Operation status](#Get-agent-Assist-status)
     * `POST bot/agentAssist:query` - [Query](#query)
-    * `POST bot/agentAssist:feedback` - [Feedback](#feedback)
-
 
 ### Create a Agent Assist
   `POST bot/agentAssist?siteId={siteId}`
@@ -22,14 +11,13 @@
 ```json
   {
     "siteId": 10000, //每个site代表一个客户
-    "emailHistoryDataUrl": "", //the json file url
-    "chatHistoryDataUrl": "", //the json file url
-    "botDataUrl": "", //the json file url
-    "faqDataUrl": "", //the json file url
-    "kbDataUrl": "", //the json file url
-    "websiteUrl": "", //客户网站，需要用爬虫去抓取数据, 测试网站 https://www.uh.edu/
-    "customDataUrl": "",  //用户自定义上传的文件数据 pdf
-    "emailFeedbackDataUrl": "", //Email反馈的数据    
+    "Comm100AIID": "", //GUID 
+    "dataSources": [
+      {
+        "type": "", // doc, webpage
+        "data": [""], //     
+      }
+    ]  
   } 
   ```
 - #### Response:
@@ -65,96 +53,31 @@
 ```json
   {
     "siteId": 10000, //每个site代表一个客户
+    "Comm100AIID": "", //GUID 
     "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
-    "query": "", //完整的query,包含这个session 的多个来回邮件内容       
-  } 
-  ```
-测试example:
-```json
-  {
-    "siteId": 10000, 
-    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
-    "query": "From: Amy
-Sent: 05/18/2023 08:39:13
-To: terryjinhz@outlook.com
-Cc: terryjincn@gmail.com
-Subject: RE:RE: Tuition
-Will it affect the classes I enrolled in for summer/fall?
-
------------------------------------------------------------------
-From: Terry Jin
-Sent: 05/18/2023 08:39:13
-To: Amy@outlook.com
-Cc: terryjincn@gmail.com
-Subject: RE: Tuition
-Hi, 
-The fee is $25 if you don’t pay your deferred plan. And a financial hold will be placed on your account.
-
-
-Thanks
-Agent Terry from Comm100   
-
------------------------------------------------------------------
-From: Amy
-Sent: 05/18/2023 08:39:13
-To: terryjinhz@outlook.com
-Cc: terryjincn@gmail.com
-Subject: Tuition
-Hi, would you please tell me what happens if I don’t pay my deferred plan by Monday? What’s the fee? Will it not let me register for classes?    
-    ",      
-  } 
-  ```
-OR 
-
-```json
-  {
-    "siteId": 10000, 
-    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
-    "query": "From: Amy
-Sent: 05/18/2023 08:39:13
-To: terryjinhz@outlook.com
-Cc: terryjincn@gmail.com
-Subject: RE:RE: Tuition
-Will it affect the classes I enrolled in for summer/fall?",
+    "query": "", //完整的query,包含这个session 的多个来回邮件内容  
     "context": {
-      "ticketId": 29407,
-      "subject": "Tuition", 
-      "history": [
-        "From: Terry Jin
-Sent: 05/18/2023 08:39:13
-To: Amy@outlook.com
-Cc: terryjincn@gmail.com
-Subject: RE: Tuition
-Hi, 
-The fee is $25 if you don’t pay your deferred plan. And a financial hold will be placed on your account.
-
-
-Thanks
-Agent Terry from Comm100",
-"From: Amy
-Sent: 05/18/2023 08:39:13
-To: terryjinhz@outlook.com
-Cc: terryjincn@gmail.com
-Subject: Tuition
-Hi, would you please tell me what happens if I don’t pay my deferred plan by Monday? What’s the fee? Will it not let me register for classes?"
-
-      ]
-    }    
+      "subject": "", 
+      "history": []     
+    }
   } 
   ```
-
+  
 - #### Response:
 ```json
   {
-    "id": "56A2EF45-7D46-EB11-8100-00155D081D0B",
-    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",    
-    "answer": "",
-    "score": 90,  //这个答案的置信度
-    "source": "", //kb, bot, faq, emailhistory, chathistory, website or custom filename
-    "error": {    //如果出错了 需要返回error 信息
-        "code": 0,
-        "message": ""
-    }
+      "code": 0,
+      "msg": "success",
+      "data": {
+          "can_answer": true,
+          "reply": "xxx",
+          "sources": [{"file": "xxx.pdf", "segment": "xxxx", "score": 0.86}]
+      },
+      "usages": {
+        "prompt_tokens": 5,
+        "completion_tokens": 7,
+        "total_tokens": 12
+      }
   }
   ``` 
 
@@ -251,4 +174,71 @@ KB Data or QA Data
   ]
   ``` 
 
-EmailFeedbackData
+测试example:
+Email:
+```json
+  {
+    "siteId": 10000, 
+    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
+    "query": "From: Amy
+Sent: 05/18/2023 08:39:13
+To: terryjinhz@outlook.com
+Cc: terryjincn@gmail.com
+Subject: RE:RE: Tuition
+Will it affect the classes I enrolled in for summer/fall?",
+    "context": {
+      "ticketId": 29407,
+      "subject": "Tuition", 
+      "history": [
+        "From: Terry Jin
+Sent: 05/18/2023 08:39:13
+To: Amy@outlook.com
+Cc: terryjincn@gmail.com
+Subject: RE: Tuition
+Hi, 
+The fee is $25 if you don’t pay your deferred plan. And a financial hold will be placed on your account.
+
+
+Thanks
+Agent Terry from Comm100",
+"From: Amy
+Sent: 05/18/2023 08:39:13
+To: terryjinhz@outlook.com
+Cc: terryjincn@gmail.com
+Subject: Tuition
+Hi, would you please tell me what happens if I don’t pay my deferred plan by Monday? What’s the fee? Will it not let me register for classes?"
+
+      ]
+    }    
+  } 
+  ```
+Chat:
+```json
+  {
+    "siteId": 10000, 
+    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
+    "query": "User:I have a denied transfer admission.But I met assured admission req? What is wrong?",
+    "context": {
+      "subject": "", 
+      "history": [
+        "AI:Hi, welcome. What can I do for you?",
+        "User:Hello sir",
+        "AI:Yes?"
+      ]
+    }    
+  } 
+  ```
+Other
+  ```json
+  {
+    "siteId": 10000, 
+    "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
+    "query": "Hi, 
+I’m a freshman here. I wonder what are the requirements for applying the Federal Financial Aid?
+I really want to apply the aids but never have done that before. Sorry.",
+    "context": {
+      "subject": "", 
+      "history": []
+    }    
+  } 
+  ```
