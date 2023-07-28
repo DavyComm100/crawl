@@ -15,7 +15,12 @@
     "dataSources": [
       {
         "type": "", // doc, webpage
-        "data": [""], //     
+        "data": 
+        [{
+            "title" : "xxx",
+            "filename":"guid.html",
+            "url" : "xxx",
+        }], //     
       }
     ]  
   } 
