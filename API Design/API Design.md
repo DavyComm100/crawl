@@ -20,10 +20,10 @@
             "title" : "xxx",
             "filename":"guid.html",
             "url" : "xxx",
-        }], //     
+        }], //
       }
-    ]  
-  } 
+    ]
+  }
   ```
 - #### Response:
 ```json
@@ -58,7 +58,7 @@
 ```json
   {
     "siteId": 10000, //每个site代表一个客户
-    "Comm100AIID": "", //GUID 
+    "GPTbotId": "", //GUID 
     "sessionId": "56A2EF45-7D46-EB11-8100-00155D081D0B",
     "query": "", //完整的query,包含这个session 的多个来回邮件内容  
     "context": {
